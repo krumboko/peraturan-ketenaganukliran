@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Peraturan Ketenaganukliran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Jenis Peraturan</h3>
+            <ul>
+                <li><a href="#" onclick="filterByType('UU')">UU</a></li>
+                <li><a href="#" onclick="filterByType('PP')">PP</a></li>
+                <li><a href="#" onclick="filterByType('PERPRES')">Perpres</a></li>
+                <li><a href="#" onclick="filterByType('Perba')">Perba</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>Daftar Peraturan</h1>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Cari peraturan...">
+            </div>
+            <div id="loading">
+                <div class="spinner"></div>
+                <p>Memuat daftar peraturan...</p>
+            </div>
+            <div id="regulation-list"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
