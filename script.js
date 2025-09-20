@@ -4,7 +4,7 @@ const peraturanData = [
   {judul: "Perba BAPETEN No. 4 Tahun 2024", tahun: 2024, jenis: "medik", tema: "radiografi", link: "PP 27 2002 Pengelolaan Limbah Radioaktif.pdf"},
   {judul: "UU No. 10 Tahun 1997 tentang Ketenaganukliran", tahun: 1997, jenis: "instalasi", tema: "welllogging", link: "dokumen/UU 10 Tahun 1997 Ketenaganukliran.pdf"},
   {judul: "PP No. 33 Tahun 2007 tentang Keselamatan Radiasi", tahun: 2007, jenis: "industri", tema: "gauging", link: "dokumen/PP 33 Tahun 2007 Keselamatan Radiasi.pdf"},
-  {judul: "Perka BAPETEN No. 16 Tahun 2014", tahun: 2014, jenis: "medik", tema: "radiografi", link: "https://github.com/krumboko/PeraturanKetenaganukliran_Baru/PP%2028%20Tahun%202025%20Penyelenggaraan%20perizinan%20berusaha.pdf"}
+  {judul: "Perka BAPETEN No. 16 Tahun 2014", tahun: 2014, jenis: "medik", tema: "radiografi", link: "https://github.com/krumboko/PeraturanKetenaganukliran_Baru/dokumen/PP%2028%20Tahun%202025%20Penyelenggaraan%20perizinan%20berusaha.pdf"}
 ];
 
 // DOM elements
