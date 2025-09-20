@@ -2,43 +2,48 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Daftar Peraturan Ketenaganukliran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peraturan Ketenaganukliran</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Daftar Peraturan Ketenaganukliran</h1>
+  <header>
+    <h1>📘 Peraturan Ketenaganukliran</h1>
+  </header>
 
-  <ol>
-    <li>
-      <a href="https://krumboko.github.io/PeraturanKetenaganukliran_Baru/PP%202%202014%20Perizinan%20IN%20dan%20BN.pdf" target="_blank">
-        PP 2 2014 Perizinan IN dan BN
-      </a>
-    </li>
-    <li>
-      <a href="https://krumboko.github.io/PeraturanKetenaganukliran_Baru/PP%2026%202002%20Keselamatan%20Pengangkutan%20ZR.pdf" target="_blank">
-        PP 26 2002 Keselamatan Pengangkutan ZR
-      </a>
-    </li>
-    <li>
-      <a href="https://krumboko.github.io/PeraturanKetenaganukliran_Baru/PP%2027%202002%20Pengelolaan%20Limbah%20Radioaktif.pdf" target="_blank">
-        PP 27 2002 Pengelolaan Limbah Radioaktif
-      </a>
-    </li>
-    <li>
-      <a href="https://krumboko.github.io/PeraturanKetenaganukliran_Baru/PP%2027%202009%20Jenis%20dan%20Tarif%20Atas%20Jenis%20PNBP.pdf" target="_blank">
-        PP 27 2009 Jenis dan Tarif Atas Jenis PNBP
-      </a>
-    </li>
-    <li>
-      <a href="https://krumboko.github.io/PeraturanKetenaganukliran_Baru/PP%2029%202008%20Perizinan%20Pemanfaatan%20SRP%20dan%20BN.pdf" target="_blank">
-        PP 29 2008 Perizinan Pemanfaatan SRP dan BN
-      </a>
-    </li>
-    <li>
-      <a href="https://krumboko.github.io/PeraturanKetenaganukliran_Baru/PP%2029%202009%20Tata%20Cara%20Penentuan%20Jumlah%20Pembatasan%20Zat%20Radioaktif.pdf" target="_blank">
-        PP 29 2009 Tata Cara Penentuan Jumlah Pembatasan Zat Radioaktif
-      </a>
-    </li>
-    <!-- Tambahkan list item di bawah ini sesuai file lain yang ada -->
-  </ol>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <h2>Filter</h2>
+      <div class="filter-group">
+        <h3>Jenis Peraturan</h3>
+        <ul>
+          <li><button class="filter-btn" data-type="all">Semua</button></li>
+          <li><button class="filter-btn" data-type="medik">Bidang Medik</button></li>
+          <li><button class="filter-btn" data-type="industri">Bidang Industri</button></li>
+          <li><button class="filter-btn" data-type="instalasi">Instalasi Nuklir</button></li>
+        </ul>
+      </div>
+      <div class="filter-group">
+        <h3>Tema</h3>
+        <ul>
+          <li><button class="filter-btn" data-theme="all">Semua</button></li>
+          <li><button class="filter-btn" data-theme="radiografi">Radiografi Industri</button></li>
+          <li><button class="filter-btn" data-theme="welllogging">Well Logging</button></li>
+          <li><button class="filter-btn" data-theme="gauging">Gauging</button></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Cari peraturan...">
+      </div>
+      <div id="peraturan-list" class="grid"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
