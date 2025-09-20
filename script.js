@@ -1,6 +1,6 @@
 // Dummy data
 const peraturanData = [
-  {judul: "Perka BAPETEN No. 3 Tahun 2021", tahun: 2021, jenis: "industri", tema: "gauging", link: "https://krumboko.github.io/PeraturanKetenaganukliran_Baru/Dokumen/PP%2027%202002%20Pengelolaan%20Limbah%20Radioaktif.pdf"},
+  {judul: "Perka BAPETEN No. 3 Tahun 2021", tahun: 2021, jenis: "industri", tema: "gauging", link: "https://krumboko.github.io/PeraturanKetenaganukliran_Baru/PP%2027%202002%20Pengelolaan%20Limbah%20Radioaktif.pdf"},
   {judul: "Perba BAPETEN No. 4 Tahun 2024", tahun: 2024, jenis: "medik", tema: "radiografi", link: "dokumen/PP 27 2002 Pengelolaan Limbah Radioaktif.pdf"},
   {judul: "UU No. 10 Tahun 1997 tentang Ketenaganukliran", tahun: 1997, jenis: "instalasi", tema: "welllogging", link: "dokumen/UU 10 Tahun 1997 Ketenaganukliran.pdf"},
   {judul: "PP No. 33 Tahun 2007 tentang Keselamatan Radiasi", tahun: 2007, jenis: "industri", tema: "gauging", link: "dokumen/PP 33 Tahun 2007 Keselamatan Radiasi.pdf"},
