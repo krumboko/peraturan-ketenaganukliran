@@ -3,7 +3,7 @@ const peraturanData = [
   {judul: "Perka BAPETEN No. 3 Tahun 2021", tahun: 2021, jenis: "industri", tema: "gauging", link: "dokumen/PP%202%202014%20Perizinan%20IN%20dan%20BN.pdf"},
   {judul: "Perba BAPETEN No. 4 Tahun 2024", tahun: 2024, jenis: "medik", tema: "radiografi", link: "dokumen/PP%2027%202002%20Pengelolaan%20Limbah%20Radioaktif.pdf"},
   {judul: "UU No. 10 Tahun 1997 tentang Ketenaganukliran", tahun: 1997, jenis: "instalasi", tema: "welllogging", link: "dokumen/" + encodeURIComponent("UU 10 Tahun 1997 Ketenaganukliran") + ".pdf"},
-  {judul: "PP No. 33 Tahun 2007 tentang Keselamatan Radiasi", tahun: 2007, jenis: "industri", tema: "gauging", link: "dokumen/PP%2033%20Tahun%202007%20Keselamatan%20Radiasi.pdf"},
+  {judul: "PP No. 33 Tahun 2007 tentang Keselamatan Radiasi", tahun: 2007, jenis: "industri", tema: "gauging", link: "dokumen/PP%2033%20Tahun%202007%20Keselamatan%20Radiasi%20Pengion%20dan%20Keamanan%20ZR.pdf"},
   {judul: "Perka BAPETEN No. 16 Tahun 2014", tahun: 2014, jenis: "medik", tema: "radiografi", link: "dokumen/PP%2028%20Tahun%202025%20Penyelenggaraan%20perizinan%20berusaha.pdf"}
 ];
 
