@@ -1,12 +1,12 @@
 // Dummy data
-const peraturanData = [
+/*const peraturanData = [
   {judul: "Perka BAPETEN No. 3 Tahun 2021", tahun: 2021, jenis: "industri", tema: "gauging", link: "dokumen/PP%202%202014%20Perizinan%20IN%20dan%20BN.pdf"},
   {judul: "Perba BAPETEN No. 4 Tahun 2024", tahun: 2024, jenis: "medik", tema: "radiografi", link: "dokumen/PP%2027%202002%20Pengelolaan%20Limbah%20Radioaktif.pdf"},
   {judul: "UU No. 10 Tahun 1997 tentang Ketenaganukliran", tahun: 1997, jenis: "instalasi", tema: "welllogging", link: "dokumen/" + encodeURIComponent("UU 10 1997 Ketenaganukliran") + ".pdf"},
   {judul: "PP No. 33 Tahun 2007 tentang Keselamatan Radiasi", tahun: 2007, jenis: "industri", tema: "gauging", link: "dokumen/"+encodeURIComponent("PP 33 2007 Keselamatan Radiasi Pengion dan Keamanan ZR") +".pdf"},
   {judul: "Perka BAPETEN No. 16 Tahun 2014", tahun: 2014, jenis: "medik", tema: "radiografi", link: "dokumen/PP%2028%20Tahun%202025%20Penyelenggaraan%20perizinan%20berusaha.pdf"}
 ];
-
+*/
 // DOM elements
 const listContainer = document.getElementById("peraturan-list");
 const searchInput = document.getElementById("searchInput");
@@ -14,6 +14,7 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 
 let currentType = "all";
 let currentTheme = "all";
+let peraturanData=[];
 
 // Render function
 function renderList() {
@@ -53,6 +54,18 @@ filterButtons.forEach(btn => {
     renderList();
   });
 });
+
+// Ambil data dari JSON
+fetch("data.json")
+  .then(response => response.json())
+  .then(data => {
+    peraturanData = data;  // simpan data ke array
+    renderList();          // render pertama kali
+ })
+  .catch(err => {
+    console.error("Gagal load data.json:", err);
+    listContainer.innerHTML = "<p style='color:red'>⚠️ Gagal memuat data.json</p>";
+ });
 
 // Initial render
 renderList();
