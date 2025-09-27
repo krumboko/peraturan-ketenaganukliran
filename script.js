@@ -7,6 +7,7 @@
   {judul: "Perka BAPETEN No. 16 Tahun 2014", tahun: 2014, jenis: "medik", tema: "radiografi", link: "dokumen/PP%2028%20Tahun%202025%20Penyelenggaraan%20perizinan%20berusaha.pdf"}
 ];
 */
+//"tema": "UU","judul": "UU No. 10 Tahun 1997 Tentang Ketenaganukliran","link": "https://krumboko.github.io/PeraturanKetenaganukliran_Baru/dokumen/UU%20No.%2010%20Tahun%201997%20Tentang%20Ketenaganukliran.pdf"
 // DOM elements
 const listContainer = document.getElementById("peraturan-list");
 const searchInput = document.getElementById("searchInput");
