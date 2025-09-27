@@ -56,7 +56,7 @@ filterButtons.forEach(btn => {
 });
 
 // Ambil data dari JSON
-fetch("data.json")
+fetch("data_github.json")
   .then(response => response.json())
   .then(data => {
     peraturanData = data;  // simpan data ke array
