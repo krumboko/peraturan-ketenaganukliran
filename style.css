@@ -58,7 +58,12 @@ aside h2 {
   background: #004085;
   color: #fff;
 }
-
+/* Tambahkan ke style.css */
+.filter-btn.active {
+    background: #004085;
+    color: #fff;
+    font-weight: bold;
+}
 /* Main */
 main {
   flex: 1;
