@@ -9,7 +9,6 @@
 <body>
   <header>
     <h1>📘 Peraturan Ketenaganukliran</h1>
-    <p>Sumber data: GitHub Repository</p>
   </header>
 
   <div class="container">
@@ -17,23 +16,17 @@
     <aside id="sidebar">
       <h2>Filter</h2>
       <div class="filter-group">
-        <h3>Jenis Peraturan</h3>
-        <ul>
-          <li><button class="filter-btn" data-type="all">Semua</button></li>
-          <li><button class="filter-btn" data-type="medik">Bidang Medik</button></li>
-          <li><button class="filter-btn" data-type="industri">Bidang Industri</button></li>
-          <li><button class="filter-btn" data-type="instalasi">Instalasi Nuklir</button></li>
-          <li><button class="filter-btn" data-type="lainnya">Lainnya</button></li>
-        </ul>
-      </div>
-      <div class="filter-group">
-        <h3>Tema</h3>
+        <h3>Berdasarkan Tema</h3>
         <ul>
           <li><button class="filter-btn" data-theme="all">Semua</button></li>
-          <li><button class="filter-btn" data-theme="radiografi">Radiografi Industri</button></li>
-          <li><button class="filter-btn" data-theme="welllogging">Well Logging</button></li>
-          <li><button class="filter-btn" data-theme="gauging">Gauging</button></li>
-          <li><button class="filter-btn" data-theme="lainnya">Lainnya</button></li>
+          <li><button class="filter-btn" data-theme="UU">Undang-Undang</button></li>
+          <li><button class="filter-btn" data-theme="PP">Peraturan Pemerintah</button></li>
+          <li><button class="filter-btn" data-theme="PERPRES">Peraturan Presiden</button></li>
+          <li><button class="filter-btn" data-theme="KEPPRES">Keputusan Presiden</button></li>
+          <li><button class="filter-btn" data-theme="FRZR">Fasilitas Radiasi & Zat Radioaktif</button></li>
+          <li><button class="filter-btn" data-theme="Medik">Bidang Medik</button></li>
+          <li><button class="filter-btn" data-theme="Industri">Bidang Industri</button></li>
+          <li><button class="filter-btn" data-theme="Instalasi Nuklir">Instalasi Nuklir</button></li>
         </ul>
       </div>
     </aside>
@@ -43,9 +36,7 @@
       <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Cari peraturan...">
       </div>
-      <div id="peraturan-list" class="grid">
-        <p>Memuat data peraturan...</p>
-      </div>
+      <div id="peraturan-list" class="grid"></div>
     </main>
   </div>
 
