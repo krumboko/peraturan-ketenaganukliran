@@ -71,7 +71,28 @@ async function fetchData() {
     console.log('⚠️ All URLs failed, using fallback data');
     useFallbackData();
 }
+// Function to check available PDF files (for debugging)
+async function checkAvailablePDFs() {
+    console.log('🔍 Checking available PDF files...');
+    
+    // Test some known PDF files from your JSON
+    const testFiles = [
+        'dokumen/UU%20No.%2010%20Tahun%201997%20Tentang%20Ketenaganukliran.pdf',
+        'dokumen/PP%20No.%2045%20Tahun%202023%20Tentang%20Keselamatan%20Radiasi%20Pengion%20dan%20Keamanan%20Zat%20Radioaktif.pdf',
+        'dokumen/'
+    ];
+    
+    for (const file of testFiles) {
+        try {
+            const response = await fetch(file, { method: 'HEAD' });
+            console.log(`${response.ok ? '✅' : '❌'} ${file}: ${response.status}`);
+        } catch (error) {
+            console.log(`❌ ${file}: ${error.message}`);
+        }
+    }
+}
 
+// Panggil fungsi ini di console browser untuk debugging
 function processData(data) {
     peraturanData = data.map(item => {
         // Extract tahun from judul
