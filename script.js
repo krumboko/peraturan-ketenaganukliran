@@ -1,3 +1,4 @@
+
 // Dummy data
 /*const peraturanData = [
   {judul: "Perka BAPETEN No. 3 Tahun 2021", tahun: 2021, jenis: "industri", tema: "gauging", link: "dokumen/PP%202%202014%20Perizinan%20IN%20dan%20BN.pdf"},
@@ -6,8 +7,7 @@
   {judul: "PP No. 33 Tahun 2007 tentang Keselamatan Radiasi", tahun: 2007, jenis: "industri", tema: "gauging", link: "dokumen/"+encodeURIComponent("PP 33 2007 Keselamatan Radiasi Pengion dan Keamanan ZR") +".pdf"},
   {judul: "Perka BAPETEN No. 16 Tahun 2014", tahun: 2014, jenis: "medik", tema: "radiografi", link: "dokumen/PP%2028%20Tahun%202025%20Penyelenggaraan%20perizinan%20berusaha.pdf"}
 ];
-*/
-//"tema": "UU","judul": "UU No. 10 Tahun 1997 Tentang Ketenaganukliran","link": "https://krumboko.github.io/PeraturanKetenaganukliran_Baru/dokumen/UU%20No.%2010%20Tahun%201997%20Tentang%20Ketenaganukliran.pdf"
+
 // DOM elements
 const listContainer = document.getElementById("peraturan-list");
 const searchInput = document.getElementById("searchInput");
