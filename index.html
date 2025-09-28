@@ -1,45 +1,38 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peraturan Ketenaganukliran</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>📘 Peraturan Ketenaganukliran</h1>
-  </header>
+/* Tambahkan di bagian akhir CSS */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
 
-  <div class="container">
-    <!-- Sidebar -->
-    <aside id="sidebar">
-      <h2>Filter</h2>
-      <div class="filter-group">
-        <h3>Berdasarkan Tema</h3>
-        <ul>
-          <li><button class="filter-btn" data-theme="all">Semua</button></li>
-          <li><button class="filter-btn" data-theme="UU">Undang-Undang</button></li>
-          <li><button class="filter-btn" data-theme="PP">Peraturan Pemerintah</button></li>
-          <li><button class="filter-btn" data-theme="PERPRES">Peraturan Presiden</button></li>
-          <li><button class="filter-btn" data-theme="KEPPRES">Keputusan Presiden</button></li>
-          <li><button class="filter-btn" data-theme="FRZR">Fasilitas Radiasi & Zat Radioaktif</button></li>
-          <li><button class="filter-btn" data-theme="Medik">Bidang Medik</button></li>
-          <li><button class="filter-btn" data-theme="Industri">Bidang Industri</button></li>
-          <li><button class="filter-btn" data-theme="Instalasi Nuklir">Instalasi Nuklir</button></li>
-        </ul>
-      </div>
-    </aside>
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #004085;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
 
-    <!-- Main content -->
-    <main>
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Cari peraturan...">
-      </div>
-      <div id="peraturan-list" class="grid"></div>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+/* Improve responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  aside {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .filter-group {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    margin-right: 1%;
+  }
+}
