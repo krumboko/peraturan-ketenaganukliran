@@ -1,45 +1,768 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peraturan Ketenaganukliran</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Peraturan Ketenaganukliran – BAPETEN</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --navy:#0b2545;
+  --navy2:#163466;
+  --teal:#0e7490;
+  --teal-light:#22d3ee;
+  --cream:#f8f6f1;
+  --paper:#ffffff;
+  --border:#e4e0d8;
+  --text:#1a1a2e;
+  --muted:#64748b;
+  --red:#dc2626;
+  --green:#059669;
+  --amber:#d97706;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  min-height:100vh;
+}
+
+/* ── HEADER ── */
+header{
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,#1e4080 100%);
+  position:relative;
+  overflow:hidden;
+}
+header::before{
+  content:'';
+  position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events:none;
+}
+.header-inner{
+  max-width:1140px;margin:0 auto;
+  padding:40px 24px 32px;
+  display:flex;align-items:center;gap:20px;
+  position:relative;z-index:1;
+}
+.atom-icon{
+  width:64px;height:64px;flex-shrink:0;
+}
+.header-text h1{
+  font-family:'DM Serif Display',serif;
+  font-size:2.1rem;color:#fff;
+  line-height:1.1;letter-spacing:-0.3px;
+}
+.header-text h1 em{
+  font-style:italic;color:var(--teal-light);
+}
+.header-text p{
+  color:rgba(255,255,255,.55);
+  font-size:.82rem;margin-top:6px;font-weight:300;
+  letter-spacing:.3px;
+}
+.header-stats{
+  margin-left:auto;flex-shrink:0;
+  display:flex;gap:20px;
+}
+.hstat{
+  text-align:right;
+}
+.hstat-num{
+  font-family:'DM Serif Display',serif;
+  font-size:1.8rem;color:var(--teal-light);line-height:1;
+}
+.hstat-label{
+  font-size:.7rem;color:rgba(255,255,255,.5);
+  text-transform:uppercase;letter-spacing:.8px;
+  margin-top:2px;
+}
+
+/* ── FILTER TABS ── */
+.tabs-wrap{
+  background:var(--navy);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  position:sticky;top:0;z-index:100;
+}
+.tabs{
+  max-width:1140px;margin:0 auto;
+  padding:0 24px;
+  display:flex;gap:0;overflow-x:auto;
+  scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  padding:14px 20px;
+  font-size:.78rem;font-weight:500;letter-spacing:.4px;
+  color:rgba(255,255,255,.5);
+  cursor:pointer;white-space:nowrap;
+  border-bottom:3px solid transparent;
+  transition:all .2s;
+  text-transform:uppercase;
+  font-family:'DM Sans',sans-serif;
+}
+.tab:hover{color:rgba(255,255,255,.8)}
+.tab.active{
+  color:#fff;
+  border-bottom-color:var(--teal-light);
+}
+
+/* ── MAIN ── */
+main{
+  max-width:1140px;margin:0 auto;
+  padding:28px 24px 80px;
+}
+
+/* ── SEARCH ── */
+.search-wrap{
+  position:relative;margin-bottom:24px;
+}
+.search-wrap input{
+  width:100%;
+  padding:15px 20px 15px 50px;
+  border:2px solid var(--border);
+  border-radius:12px;
+  background:var(--paper);
+  font-family:'DM Sans',sans-serif;
+  font-size:.95rem;color:var(--text);
+  outline:none;
+  box-shadow:0 1px 4px rgba(0,0,0,.06);
+  transition:border-color .2s,box-shadow .2s;
+}
+.search-wrap input:focus{
+  border-color:var(--teal);
+  box-shadow:0 0 0 4px rgba(14,116,144,.1);
+}
+.search-wrap input::placeholder{color:var(--muted);font-style:italic}
+.s-icon{
+  position:absolute;left:16px;top:50%;transform:translateY(-50%);
+  color:var(--muted);pointer-events:none;
+}
+.s-badge{
+  position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  background:var(--navy2);color:#fff;
+  font-size:.7rem;font-weight:600;
+  padding:3px 9px;border-radius:20px;
+  display:none;
+}
+
+/* ── SECTION CARDS ── */
+.section{
+  background:var(--paper);
+  border:1px solid var(--border);
+  border-radius:14px;
+  margin-bottom:10px;
+  overflow:hidden;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
+  transition:box-shadow .2s;
+}
+.section:hover{box-shadow:0 4px 12px rgba(0,0,0,.08)}
+
+.sec-head{
+  display:flex;align-items:center;gap:12px;
+  padding:16px 20px;
+  cursor:pointer;
+  transition:background .15s;
+  user-select:none;
+}
+.sec-head:hover{background:#f9f8f6}
+
+.sec-stripe{
+  width:4px;height:36px;border-radius:4px;
+  flex-shrink:0;
+}
+.sec-title{
+  font-family:'DM Serif Display',serif;
+  font-size:1rem;color:var(--navy);flex:1;
+  line-height:1.3;
+}
+.sec-count{
+  background:var(--navy);color:#fff;
+  font-size:.68rem;font-weight:600;
+  padding:3px 10px;border-radius:20px;
+  flex-shrink:0;
+}
+.sec-chevron{
+  color:var(--muted);transition:transform .25s;flex-shrink:0;
+}
+.section.open .sec-chevron{transform:rotate(180deg)}
+.sec-body{
+  display:none;
+  border-top:1px solid var(--border);
+}
+.section.open .sec-body{display:block}
+
+/* ── ITEMS ── */
+.item-list{padding:4px 0}
+.item{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:10px 20px 10px 28px;
+  border-bottom:1px solid #f3f0eb;
+  transition:background .1s;
+}
+.item:last-child{border-bottom:none}
+.item:hover{background:#fafaf8}
+
+.item-num{
+  flex-shrink:0;
+  font-size:.7rem;color:#bbb;
+  min-width:20px;padding-top:3px;
+  font-style:italic;
+}
+.item-content{flex:1;min-width:0}
+.item-link{
+  color:var(--teal);text-decoration:none;
+  font-size:.88rem;line-height:1.55;
+  display:block;
+  transition:color .15s;
+}
+.item-link:hover{color:var(--navy);text-decoration:underline}
+.item-link::before{
+  content:'📄 ';
+  font-size:.75rem;
+  margin-right:2px;
+}
+
+mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 1px}
+
+/* ── EMPTY ── */
+.empty{
+  display:none;
+  text-align:center;padding:64px 24px;
+  color:var(--muted);
+}
+.empty svg{opacity:.25;margin-bottom:16px}
+.empty p{font-style:italic;font-size:.9rem}
+
+/* ── KATEGORI COLORS ── */
+.stripe-uu{background:#3b82f6}
+.stripe-pp{background:#8b5cf6}
+.stripe-perpres{background:#06b6d4}
+.stripe-perka{background:var(--green)}
+.stripe-kepka{background:var(--amber)}
+.stripe-se{background:var(--red)}
+.stripe-sop{background:#f59e0b}
+.stripe-panduan{background:#ec4899}
+
+/* ── GUIDE BOX ── */
+.guide{
+  background:linear-gradient(135deg,#f0f9ff,#e0f2fe);
+  border:1px solid #bae6fd;
+  border-radius:12px;
+  padding:16px 20px;
+  margin-bottom:24px;
+  display:flex;gap:12px;align-items:flex-start;
+}
+.guide-icon{font-size:1.4rem;flex-shrink:0}
+.guide-text{font-size:.82rem;color:#0c4a6e;line-height:1.6}
+.guide-text strong{font-weight:600}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--navy);color:rgba(255,255,255,.4);
+  text-align:center;padding:20px 24px;
+  font-size:.75rem;
+}
+footer a{color:rgba(255,255,255,.6);text-decoration:none}
+footer a:hover{color:#fff}
+
+@media(max-width:640px){
+  .header-stats{display:none}
+  .header-text h1{font-size:1.5rem}
+  .atom-icon{width:48px;height:48px}
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>📘 Peraturan Ketenaganukliran</h1>
-  </header>
 
-  <div class="container">
-    <!-- Sidebar -->
-    <aside id="sidebar">
-      <h2>Filter</h2>
-      <div class="filter-group">
-        <h3>Berdasarkan Tema</h3>
-        <ul>
-          <li><button class="filter-btn" data-theme="all">Semua</button></li>
-          <li><button class="filter-btn" data-theme="UU">Undang-Undang</button></li>
-          <li><button class="filter-btn" data-theme="PP">Peraturan Pemerintah</button></li>
-          <li><button class="filter-btn" data-theme="PERPRES">Peraturan Presiden</button></li>
-          <li><button class="filter-btn" data-theme="KEPPRES">Keputusan Presiden</button></li>
-          <li><button class="filter-btn" data-theme="FRZR">Fasilitas Radiasi & Zat Radioaktif</button></li>
-          <li><button class="filter-btn" data-theme="Medik">Bidang Medik</button></li>
-          <li><button class="filter-btn" data-theme="Industri">Bidang Industri</button></li>
-          <li><button class="filter-btn" data-theme="Instalasi Nuklir">Instalasi Nuklir</button></li>
-        </ul>
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <svg class="atom-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="32" cy="32" rx="30" ry="12" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+      <ellipse cx="32" cy="32" rx="30" ry="12" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(60 32 32)"/>
+      <ellipse cx="32" cy="32" rx="30" ry="12" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(120 32 32)"/>
+      <circle cx="32" cy="32" r="5" fill="#22d3ee"/>
+      <circle cx="62" cy="32" r="3" fill="#22d3ee" opacity=".8"/>
+      <circle cx="17" cy="6.1" r="3" fill="#22d3ee" opacity=".8"/>
+      <circle cx="17" cy="57.9" r="3" fill="#22d3ee" opacity=".8"/>
+    </svg>
+    <div class="header-text">
+      <h1>Peraturan <em>Ketenaganukliran</em></h1>
+      <p>Badan Pengawas Tenaga Nuklir · BAPETEN · Versi 3.0</p>
+    </div>
+    <div class="header-stats">
+      <div class="hstat">
+        <div class="hstat-num" id="hTotal">200+</div>
+        <div class="hstat-label">Dokumen</div>
       </div>
-    </aside>
+      <div class="hstat">
+        <div class="hstat-num">9</div>
+        <div class="hstat-label">Kategori</div>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <!-- Main content -->
-    <main>
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Cari peraturan...">
-      </div>
-      <div id="peraturan-list" class="grid"></div>
-    </main>
+<!-- FILTER TABS -->
+<div class="tabs-wrap">
+  <div class="tabs" id="tabs">
+    <div class="tab active" data-f="all">Semua</div>
+    <div class="tab" data-f="uu">UU</div>
+    <div class="tab" data-f="pp">PP</div>
+    <div class="tab" data-f="perpres">Perpres / Keppres</div>
+    <div class="tab" data-f="perka">Peraturan BAPETEN</div>
+    <div class="tab" data-f="kepka">Kepka BAPETEN</div>
+    <div class="tab" data-f="se">Surat Edaran</div>
+    <div class="tab" data-f="sop">SOP & Panduan Industri</div>
+    <div class="tab" data-f="panduan">Panduan & IK</div>
+  </div>
+</div>
+
+<main>
+  <!-- PANDUAN PENGGUNAAN -->
+  <div class="guide">
+    <div class="guide-icon">💡</div>
+    <div class="guide-text">
+      <strong>Cara penggunaan:</strong> Gunakan kotak pencarian untuk menemukan peraturan berdasarkan nomor, tahun, atau kata kunci. Klik judul peraturan untuk membuka file PDF. Gunakan tab di atas untuk menyaring berdasarkan jenis dokumen.
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- SEARCH -->
+  <div class="search-wrap">
+    <svg class="s-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" id="q" placeholder="Cari nomor peraturan, tahun, atau topik… misal: 'radiasi 2020' atau 'PP 45'"/>
+    <span class="s-badge" id="sBadge"></span>
+  </div>
+
+  <!-- SECTIONS -->
+  <div id="container"></div>
+  <div class="empty" id="empty">
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <p>Tidak ada peraturan yang cocok dengan pencarian Anda.</p>
+  </div>
+</main>
+
+<footer>
+  Repository: <a href="https://github.com/krumboko/peraturan-ketenaganukliran" target="_blank">github.com/krumboko/peraturan-ketenaganukliran</a> &nbsp;·&nbsp;
+  File PDF tersimpan di folder <code>dokumen/</code> &nbsp;·&nbsp; BAPETEN © 2024
+</footer>
+
+<script>
+// ==========================================================
+// BASE PATH — semua PDF ada di folder dokumen/ (flat)
+// ==========================================================
+const BASE = 'dokumen/';
+
+// Warna stripe per kategori
+const STRIPE = {
+  uu:'stripe-uu', pp:'stripe-pp', perpres:'stripe-perpres',
+  perka:'stripe-perka', kepka:'stripe-kepka', se:'stripe-se',
+  sop:'stripe-sop', panduan:'stripe-panduan'
+};
+
+// ==========================================================
+// DATA LENGKAP — href = nama file PDF saja (flat di dokumen/)
+// ==========================================================
+const SECTIONS = [
+  // ── 1. PERATURAN TERKAIT ─────────────────────────────────
+  { id:'s1', title:'Peraturan Terkait (UU & PP Umum)', cat:'uu', items:[
+    { f:'UU 12 tahun 2011.pdf',                       t:'UU No. 12 Tahun 2011 – Pembentukan Peraturan Perundang-Undangan' },
+    { f:'Bapeten_UU.11.2020.pdf',                     t:'UU No. 11 Tahun 2020 – Cipta Kerja' },
+    { f:'PP-5-2021-OSS.pdf',                          t:'PP No. 5 Tahun 2021 – Penyelenggaraan Perizinan Berusaha Berbasis Risiko' },
+    { f:'3_000395_637.pdf',                           t:'PERPRES No. 87 Tahun 2014 – Peraturan Pelaksanaan UU No. 12 Tahun 2011' },
+    { f:'Peraturan_Presiden_No_1_th_2007.pdf',        t:'PERPRES No. 1 Tahun 2007 – Pengesahan, Pengundangan, dan Penyebarluasan Peraturan Perundang-Undangan' },
+    { f:'137_PMK.02_2021Per (PNBP BApeten).pdf',      t:'Permenkeu 137/PMK.02/2021 – PNBP Yang Bersifat Volatil dan Kebutuhan Mendesak Pada BAPETEN' },
+  ]},
+
+  // ── 2. UNDANG-UNDANG ─────────────────────────────────────
+  { id:'s2', title:'Undang-Undang Ketenaganukliran', cat:'uu', items:[
+    { f:'SJDIH-BAPETEN_1_000001_1.pdf',               t:'UU No. 10 Tahun 1997 – Ketenaganukliran' },
+    { f:'SJDIH-BAPETEN_1_000104_1.pdf',               t:'UU No. 9 Tahun 1997 – Pengesahan Treaty on The Southeast Asia Nuclear Weapon Free Zone (SEANWFZ)' },
+    { f:'SJDIH-BAPETEN_1_000005_1.pdf',               t:'UU No. 8 Tahun 1978 – Pengesahan Perjanjian Pencegahan Penyebaran Senjata Nuklir (NPT)' },
+    { f:'uu 1 th 2012 pengensahan konvensi nuclear test ban treaty.pdf', t:'UU No. 1 Tahun 2012 – Pengesahan Traktat Pelarangan Menyeluruh Uji Coba Nuklir (CTBT)' },
+    { f:'uu 10 th 2014  terorisme nuklir.pdf',         t:'UU No. 10 Tahun 2014 – Pengesahan International Convention For The Suppression of Acts of Nuclear Terrorism' },
+  ]},
+
+  // ── 3. PERATURAN PEMERINTAH ──────────────────────────────
+  { id:'s3', title:'Peraturan Pemerintah', cat:'pp', items:[
+    { f:'PP Nomor 45 Tahun 2023.pdf',                 t:'PP No. 45 Tahun 2023 – Keselamatan Radiasi Pengion dan Keamanan Zat Radioaktif' },
+    { f:'PP Nomor 42 Tahun 2022.pdf',                 t:'PP No. 42 Tahun 2022 – Tarif PNBP Pada BAPETEN' },
+    { f:'PP Nomor 52 Tahun 2022.pdf',                 t:'PP No. 52 Tahun 2022 – Keselamatan dan Keamanan Bahan Galian Nuklir' },
+    { f:'PP_Nomor_58_Tahun_2015.pdf',                 t:'PP No. 58 Tahun 2015 – Keselamatan dan Keamanan Dalam Pengangkutan Zat Radioaktif' },
+    { f:'pp 56 th 2014 pnbp.pdf',                     t:'PP No. 56 Tahun 2014 – Jenis dan Tarif PNBP yang Berlaku Pada BAPETEN' },
+    { f:'PP 2 tahun 2014 perizinan IN.pdf',            t:'PP No. 2 Tahun 2014 – Perizinan Instalasi Nuklir dan Pemanfaatan Bahan Nuklir' },
+    { f:'PP Limbah No 61 Th 2013.pdf',                t:'PP No. 61 Tahun 2013 – Pengelolaan Limbah Radioaktif' },
+    { f:'SJDIH-BAPETEN_1_000169_1.pdf',               t:'PP No. 54 Tahun 2012 – Keselamatan dan Keamanan Instalasi Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000125_1.pdf',               t:'PP No. 29 Tahun 2009 – Tata Cara Penentuan Jumlah, Pembayaran, dan Penyetoran PNBP Yang Terutang' },
+    { f:'SJDIH-BAPETEN_1_000117_1.pdf',               t:'PP No. 27 Tahun 2009 – Tarif dan Jenis PNBP Yang Berlaku Pada BAPETEN' },
+    { f:'SJDIH-BAPETEN_1_000122_1.pdf',               t:'PP No. 46 Tahun 2009 – Batas Pertanggungjawaban Kerugian Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000086_1.pdf',               t:'PP No. 29 Tahun 2008 – Perizinan Pemanfaatan Sumber Radiasi Pengion dan Bahan Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000021_1.pdf',               t:'PP No. 33 Tahun 2007 – Keselamatan Radiasi Pengion dan Keamanan Sumber Radioaktif' },
+    { f:'PP_no_43_th_2006_ttg-perizinan reaktor nuklir.pdf', t:'PP No. 43 Tahun 2006 – Perizinan Reaktor Nuklir' },
+    { f:'PP_no_43_th_2006_ttg-perizinan reaktor nuklir.pdf', t:'PP No. 26 Tahun 2002 – Keselamatan Pengangkutan Zat Radioaktif' },
+    { f:'SJDIH-BAPETEN_1_000096_1.pdf',               t:'PP No. 27 Tahun 2002 – Pengelolaan Limbah Radioaktif' },
+  ]},
+
+  // ── 4. PERPRES / KEPPRES ─────────────────────────────────
+  { id:'s4', title:'Peraturan Presiden & Keputusan Presiden', cat:'perpres', items:[
+    { f:'Perpres Nomor 60 Tahun 2019.pdf',            t:'PERPRES No. 60 Tahun 2019 – Kebijakan dan Strategi Nasional Keselamatan Nuklir Dan Radiasi' },
+    { f:'_000275_1.pdf',                              t:'PERPRES No. 74 Tahun 2012 – Pertanggungjawaban Kerugian Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000132_1.pdf',               t:'PERPRES No. 84 Tahun 2010 – Pengesahan Joint Convention on The Safety of Spent Fuel Management And on The Safety of Radioactive Waste Management' },
+    { f:'SJDIH-BAPETEN_1_000124_1.pdf',               t:'PERPRES No. 46 Tahun 2009 – Pengesahan Amendment To The Convention on The Physical Protection of Nuclear Material' },
+    { f:'SJDIH-BAPETEN_1_000107_1.pdf',               t:'KEPPRES No. 106 Tahun 2001 – Pengesahan Convention on Nuclear Safety' },
+    { f:'SJDIH-BAPETEN_1_000104_1.pdf',               t:'KEPPRES No. 80 Tahun 1993 – Pengesahan Amendment Article VI Statute of The IAEA' },
+    { f:'SJDIH-BAPETEN_1_000105_1.pdf',               t:'KEPPRES No. 81 Tahun 1993 – Pengesahan Convention on Early Notification of A Nuclear Accident' },
+    { f:'SJDIH-BAPETEN_1_000106_1.pdf',               t:'KEPPRES No. 82 Tahun 1993 – Pengesahan Convention on Assistance In The Case of A Nuclear Accident or Radiological Emergency' },
+    { f:'SJDIH-BAPETEN_1_000103_1.pdf',               t:'KEPPRES No. 49 Tahun 1986 – Pengesahan Convention on The Physical Protection of Nuclear Material' },
+  ]},
+
+  // ── 5. PERKA 2021-2022 ────────────────────────────────────
+  { id:'s5', title:'Peraturan BAPETEN 2021–2022', cat:'perka', items:[
+    { f:'Bapeten_Perka.1.2022.pdf',                   t:'Peraturan BAPETEN No. 1 Tahun 2022 – Penatalaksanaan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran' },
+    { f:'Bapeten_Perka.3.2022.pdf',                   t:'Peraturan BAPETEN No. 3 Tahun 2022 – Keselamatan Desain Reaktor Daya' },
+    { f:'Peraturan Bapeten Nomor 4 Tahun 2022.pdf',   t:'Peraturan BAPETEN No. 4 Tahun 2022 – Laboratorium Uji Bungkusan Zat Radioaktif' },
+    { f:'Bapeten_Perka.3.2021.pdf',                   t:'Peraturan BAPETEN No. 3 Tahun 2021 – Standar Kegiatan Usaha dan Standar Produk Pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko' },
+  ]},
+
+  // ── 6. PERKA 2020 ─────────────────────────────────────────
+  { id:'s6', title:'Peraturan BAPETEN 2020', cat:'perka', items:[
+    { f:'Bapeten_Perka.1.2020.pdf',  t:'Peraturan BAPETEN No. 1 Tahun 2020 – Aspek Proteksi Radiasi Dalam Desain Reaktor Daya' },
+    { f:'Bapeten_Perka.3.2020.pdf',  t:'Peraturan BAPETEN No. 3 Tahun 2020 – Keselamatan Radiasi Dalam Penggunaan Iradiator untuk Iradiasi' },
+    { f:'Bapeten_Perka.4.2020.pdf',  t:'Peraturan BAPETEN No. 4 Tahun 2020 – Keselamatan Radiasi Pada Penggunaan Pesawat Sinar-X Dalam Radiologi Diagnostik dan Intervensional' },
+    { f:'Bapeten_Perka.5.2020.pdf',  t:'Peraturan BAPETEN No. 5 Tahun 2020 – Justifikasi Pemanfaatan Sumber Radiasi Pengion' },
+    { f:'Bapeten_Perka.6.2020.pdf',  t:'Peraturan BAPETEN No. 6 Tahun 2020 – Keselamatan Radiasi Dalam Produksi Radioisotop untuk Radiofarmaka' },
+    { f:'Bapeten_Perka.7.2020.pdf',  t:'Peraturan BAPETEN No. 7 Tahun 2020 – Ketentuan Keselamatan dan Tata Laksana Pengangkutan Zat Radioaktif' },
+    { f:'Bapeten_Perka.11.2020.pdf', t:'Peraturan BAPETEN No. 11 Tahun 2020 – Penyusunan Laporan Analisis Keselamatan Reaktor Daya' },
+    { f:'Bapeten_Perka.12.2020.pdf', t:'Peraturan BAPETEN No. 12 Tahun 2020 – Klasifikasi Struktur, Sistem, dan Komponen Instalasi Nuklir' },
+  ]},
+
+  // ── 7. PERKA 2019 ─────────────────────────────────────────
+  { id:'s7', title:'Peraturan BAPETEN 2019', cat:'perka', items:[
+    { f:'529_2019-02-20_10_19_19.pdf', t:'Peraturan BAPETEN No. 2 Tahun 2019 – Keselamatan Komisioning Reaktor Nondaya' },
+    { f:'Bapeten_Perka.4.2019.pdf',    t:'Peraturan BAPETEN No. 4 Tahun 2019 – Evaluasi Tapak Instalasi Nuklir untuk Aspek Dispersi Zat Radioaktif Di Udara dan Air' },
+    { f:'Bapeten_Perka.5.2019.pdf',    t:'Peraturan BAPETEN No. 5 Tahun 2019 – Penyusunan Laporan Analisis Keselamatan' },
+    { f:'Bapeten_Perka.6.2019.pdf',    t:'Peraturan BAPETEN No. 6 Tahun 2019 – Evaluasi Tapak Instalasi Nuklir untuk Aspek Kejadian Eksternal Akibat Ulah Manusia' },
+    { f:'Bapeten_Perka.7.2019.pdf',    t:'Peraturan BAPETEN No. 7 Tahun 2019 – Izin Bekerja Petugas Instalasi Nuklir dan Bahan Nuklir' },
+    { f:'529_2019-02-20_10_19_19.pdf', t:'Peraturan BAPETEN No. 8 Tahun 2019 – Keselamatan Operasi Reaktor Nondaya' },
+  ]},
+
+  // ── 8. PERKA 2018 ─────────────────────────────────────────
+  { id:'s8', title:'Peraturan BAPETEN 2018', cat:'perka', items:[
+    { f:'SALINAN_PERKA_2_TAHUN_2018_JDIH.pdf', t:'Peraturan BAPETEN No. 2 Tahun 2018 – Uji Kesesuaian Pesawat Sinar-X Radiologi Diagnostik dan Intervensional' },
+    { f:'518_2018-08-20_13_23_25.pdf',         t:'Peraturan BAPETEN No. 4 Tahun 2018 – Ketentuan Keselamatan Evaluasi Tapak Instalasi Nuklir' },
+    { f:'521_2018-08-30_15_46_58.pdf',         t:'Peraturan BAPETEN No. 5 Tahun 2018 – Pelayanan Perizinan Pemanfaatan Tenaga Nuklir Secara Elektronik' },
+    { f:'520_2018-08-28_19_02_32.pdf',         t:'Peraturan BAPETEN No. 6 Tahun 2018 – Persyaratan Tata Cara Perizinan Berusaha Terintegrasi Secara Elektronik Sektor Ketenaganukliran' },
+  ]},
+
+  // ── 9. PERKA 2017 ─────────────────────────────────────────
+  { id:'s9', title:'Peraturan BAPETEN 2017', cat:'perka', items:[
+    { f:'482_2017-05-26_11_13_33.pdf', t:'Perka BAPETEN No. 2 Tahun 2017 – Larangan dan Pembatasan Impor dan Ekspor Barang Konsumen, Sumber Radiasi Pengion, dan Bahan Nuklir' },
+    { f:'488_2017-08-07_15_18_44.pdf', t:'Perka BAPETEN No. 7 Tahun 2017 – Perubahan Atas Perka No. 7 Tahun 2013 Tentang Nilai Batas Radioaktivitas Lingkungan' },
+  ]},
+
+  // ── 10. PERKA 2016 ────────────────────────────────────────
+  { id:'s10', title:'Peraturan BAPETEN 2016', cat:'perka', items:[
+    { f:'463_2016-06-17_11-59-45.pdf',   t:'Perka BAPETEN No. 5 Tahun 2016 – Keselamatan Radiasi Dalam Produksi Barang Konsumen' },
+    { f:'470_2016-09-29_09-55-15_2.pdf', t:'Perka BAPETEN No. 8 Tahun 2016 – Pengelolaan Limbah Radioaktif Tingkat Rendah dan Tingkat Sedang' },
+  ]},
+
+  // ── 11. PERKA 2015 ────────────────────────────────────────
+  { id:'s11', title:'Peraturan BAPETEN 2015', cat:'perka', items:[
+    { f:'_418_662.pdf',                             t:'Perka BAPETEN No. 2 Tahun 2015 – Verifikasi dan Penilaian Keselamatan Reaktor Nondaya' },
+    { f:'perka 5 2015 kegunung apian.pdf',          t:'Perka BAPETEN No. 5 Tahun 2015 – Evaluasi Tapak Instalasi Nuklir untuk Aspek Kegunungapian' },
+    { f:'perka 6 2016 Keamanan sumber radioaktif.pdf', t:'Perka BAPETEN No. 6 Tahun 2015 – Keamanan Sumber Radioaktif' },
+    { f:'perka 9 2015 perawatan INNR.pdf',          t:'Perka BAPETEN No. 9 Tahun 2015 – Perawatan Instalasi Nuklir Non Reaktor' },
+    { f:'perka 11 2015 lab dosimetri eksterna.pdf', t:'Perka BAPETEN No. 11 Tahun 2015 – Laboratorium Dosimetri Eksternal' },
+  ]},
+
+  // ── 12. PERKA 2014 ────────────────────────────────────────
+  { id:'s12', title:'Peraturan BAPETEN 2014', cat:'perka', items:[
+    { f:'4_000380_579.pdf', t:'Perka BAPETEN No. 2 Tahun 2014 – Manajemen Teras serta Penanganan dan Penyimpanan Bahan Bakar Nuklir Pada Reaktor Nondaya' },
+    { f:'4_000381_580.pdf', t:'Perka BAPETEN No. 3 Tahun 2014 – Penyusunan Dokumen Analisis Mengenai Dampak Lingkungan Bidang Ketenaganukliran' },
+    { f:'4_000384_583.pdf', t:'Perka BAPETEN No. 4 Tahun 2014 – Batasan dan Kondisi Operasi Instalasi Nuklir Nonreaktor' },
+    { f:'4_000385_587.pdf', t:'Perka BAPETEN No. 6 Tahun 2014 – Evaluasi Tapak Instalasi Nuklir untuk Aspek Meteorologi dan Hidrologi' },
+    { f:'4_000390_593.pdf', t:'Perka BAPETEN No. 8 Tahun 2014 – Perubahan Atas Perka No. 7 Tahun 2009 Tentang Keselamatan Radiasi Dalam Penggunaan Peralatan Radiografi Industri' },
+    { f:'4_000397_638.pdf', t:'Perka BAPETEN No. 10 Tahun 2014 – Penatausahaan PNBP Pada BAPETEN' },
+    { f:'_408_652.pdf',     t:'Perka BAPETEN No. 15 Tahun 2014 – Keselamatan Radiasi Dalam Produksi Pesawat Sinar-X Radiologi Diagnostik dan Intervensional' },
+    { f:'4_000409_653.pdf', t:'Perka BAPETEN No. 16 Tahun 2014 – Surat Izin Bekerja Petugas Tertentu Yang Bekerja Di Instalasi Yang Memanfaatkan Sumber Radiasi Pengion' },
+  ]},
+
+  // ── 13. PERKA 2013 ────────────────────────────────────────
+  { id:'s13', title:'Peraturan BAPETEN 2013', cat:'perka', items:[
+    { f:'SJDIH-BAPETEN_1_000162_1.pdf', t:'Perka BAPETEN No. 1 Tahun 2013 – Perubahan Atas Perka No. 3 Tahun 2012 Tentang Penatausahaan PNBP' },
+    { f:'4_000321_474.pdf',             t:'Perka BAPETEN No. 3 Tahun 2013 – Keselamatan Radiasi Dalam Penggunaan Radioterapi' },
+    { f:'_000322_475.pdf',              t:'Perka BAPETEN No. 4 Tahun 2013 – Proteksi dan Keselamatan Radiasi Dalam Pemanfaatan Tenaga Nuklir' },
+    { f:'_000325_495.pdf',              t:'Perka BAPETEN No. 6 Tahun 2013 – Izin Bekerja Petugas Instalasi dan Bahan Nuklir' },
+    { f:'4_000326_532.pdf',             t:'Perka BAPETEN No. 7 Tahun 2013 – Nilai Batas Radioaktivitas Lingkungan' },
+    { f:'4_000327_498.pdf',             t:'Perka BAPETEN No. 8 Tahun 2013 – Evaluasi Tapak Instalasi Nuklir untuk Aspek Kegempaan' },
+    { f:'4_000328_499.pdf',             t:'Perka BAPETEN No. 9 Tahun 2013 – Batasan dan Kondisi Operasi Reaktor Nondaya' },
+    { f:'4_000349_542.pdf',             t:'Perka BAPETEN No. 16 Tahun 2013 – Keselamatan Radiasi Dalam Penyimpanan TENORM' },
+    { f:'4_000350_543.pdf',             t:'Perka BAPETEN No. 17 Tahun 2013 – Keselamatan Radiasi Dalam Kegiatan Impor, Ekspor, dan Pengalihan Barang Konsumen' },
+  ]},
+
+  // ── 14. PERKA 2012 ────────────────────────────────────────
+  { id:'s14', title:'Peraturan BAPETEN 2012', cat:'perka', items:[
+    { f:'SJDIH-BAPETEN_1_000162_1.pdf',     t:'Perka BAPETEN No. 1 Tahun 2012 – Ketentuan Desain Sistem Proteksi Terhadap Kebakaran dan Ledakan Internal Pada Reaktor Daya' },
+    { f:'SJDIH-BAPETEN_1_000167_1.pdf',     t:'Perka BAPETEN No. 2 Tahun 2012 – Desain Proteksi Terhadap Bahaya Internal Selain Kebakaran dan Ledakan Pada Reaktor Daya' },
+    { f:'SJDIH-BAPETEN_1_000174_1.pdf',     t:'Perka BAPETEN No. 3 Tahun 2012 – Penatausahaan PNBP Pada BAPETEN' },
+    { f:'SJDIH-BAPETEN__000171_1.pdf',      t:'Perka BAPETEN No. 5 Tahun 2012 – Keselamatan Dalam Utilisasi dan Modifikasi Reaktor Nondaya' },
+    { f:'SJDIH-BAPETEN_1_000173_1.pdf',     t:'Perka BAPETEN No. 7 Tahun 2012 – Manajemen Penuaan Instalasi Nuklir Nonreaktor' },
+    { f:'SJDIH-BAPETEN__000251_1.pdf',      t:'Perka BAPETEN No. 8 Tahun 2012 – Penyusunan Laporan Analisis Keselamatan Reaktor Non Daya' },
+    { f:'_000278_1.pdf',                    t:'Perka BAPETEN No. 12 Tahun 2012 – Pemberlakuan Sistem Elektronik Dalam Kerangka Indonesia National Single Window (INSW)' },
+    { f:'SJDIH-BAPETEN_4_000294_427.pdf',   t:'Perka BAPETEN No. 16 Tahun 2012 – Tingkat Klierens' },
+    { f:'SJDIH-BAPETEN_4_000295_430_3.pdf', t:'Perka BAPETEN No. 17 Tahun 2012 – Keselamatan Radiasi Dalam Kedokteran Nuklir' },
+  ]},
+
+  // ── 15. PERKA 2011 ────────────────────────────────────────
+  { id:'s15', title:'Peraturan BAPETEN 2011', cat:'perka', items:[
+    { f:'SJDIH-BAPETEN_1_000137_1.pdf', t:'Perka BAPETEN No. 1 Tahun 2011 – Ketentuan Keselamatan Desain Reaktor Nondaya' },
+    { f:'SJDIH-BAPETEN_1_000138_1.pdf', t:'Perka BAPETEN No. 2 Tahun 2011 – Ketentuan Keselamatan Operasi Reaktor Nondaya' },
+    { f:'SJDIH-BAPETEN_1_000140_4.pdf', t:'Perka BAPETEN No. 3 Tahun 2011 – Ketentuan Keselamatan Desain Reaktor Daya' },
+    { f:'SJDIH-BAPETEN_1_000141_1.pdf', t:'Perka BAPETEN No. 4 Tahun 2011 – Sistem Seifgard' },
+    { f:'SJDIH-BAPETEN_1_000142_1.pdf', t:'Perka BAPETEN No. 5 Tahun 2011 – Ketentuan Perawatan Reaktor Nondaya' },
+    { f:'SJDIH-BAPETEN_1_000143_1.pdf', t:'Perka BAPETEN No. 6 Tahun 2011 – Dekomisioning Instalasi Nuklir Non Reaktor' },
+    { f:'SJDIH-BAPETEN_1_000154_1.pdf', t:'Perka BAPETEN No. 7 Tahun 2011 – Desain Sistem Catu Daya Darurat untuk Reaktor Daya' },
+    { f:'SJDIH-BAPETEN_1_000155_1.pdf', t:'Perka BAPETEN No. 8 Tahun 2011 – Keselamatan Radiasi Dalam Penggunaan Pesawat Sinar-X Radiologi Diagnostik dan Intervensional' },
+    { f:'SJDIH-BAPETEN_1_000158_1.pdf', t:'Perka BAPETEN No. 10 Tahun 2011 – Sistem Manajemen BAPETEN' },
+  ]},
+
+  // ── 16. PERKA 2009-2010 ───────────────────────────────────
+  { id:'s16', title:'Peraturan BAPETEN 2009–2010', cat:'perka', items:[
+    { f:'SJDIH-BAPETEN_1_000128_1.pdf', t:'Perka BAPETEN No. 1 Tahun 2010 – Kesiapsiagaan dan Penanggulangan Kedaruratan Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000127_1.pdf', t:'Perka BAPETEN No. 3 Tahun 2010 – Desain Sistem Penanganan dan Penyimpanan Bahan Bakar Nuklir untuk Reaktor Daya' },
+    { f:'SJDIH-BAPETEN_1_000130_1.pdf', t:'Perka BAPETEN No. 4 Tahun 2010 – Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000131_1.pdf', t:'Perka BAPETEN No. 6 Tahun 2010 – Pemantauan Kesehatan untuk Pekerja Radiasi' },
+    { f:'SJDIH-BAPETEN_1_000110_1.pdf', t:'Perka BAPETEN No. 1 Tahun 2009 – Ketentuan Sistem Proteksi Fisik Instalasi dan Bahan Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000121_1.pdf', t:'Perka BAPETEN No. 2 Tahun 2009 – Penyusunan Daftar Informasi Desain' },
+    { f:'SJDIH-BAPETEN_1_000114_1.pdf', t:'Perka BAPETEN No. 5 Tahun 2009 – Keselamatan Radiasi Dalam Penggunaan Zat Radioaktif untuk Well Logging' },
+    { f:'SJDIH-BAPETEN_1_000115_1.pdf', t:'Perka BAPETEN No. 6 Tahun 2009 – Keselamatan Radiasi Dalam Penggunaan Zat Radioaktif dan Pesawat Sinar-X untuk Peralatan Gauging' },
+    { f:'SJDIH-BAPETEN_1_000116_1.pdf', t:'Perka BAPETEN No. 7 Tahun 2009 – Keselamatan Radiasi Dalam Penggunaan Peralatan Radiografi Industri' },
+    { f:'SJDIH-BAPETEN_1_000123_1.pdf', t:'Perka BAPETEN No. 9 Tahun 2009 – Intervensi Terhadap Paparan Yang Berasal Dari TENORM' },
+  ]},
+
+  // ── 17. PERKA 2005-2008 ───────────────────────────────────
+  { id:'s17', title:'Peraturan BAPETEN 2005–2008', cat:'perka', items:[
+    { f:'SJDIH-BAPETEN_1_000076_1.pdf', t:'Perka BAPETEN No. 1 Tahun 2008 – Evaluasi Tapak Reaktor Daya untuk Aspek Kegempaan' },
+    { f:'SJDIH-BAPETEN_1_000082_1.pdf', t:'Perka BAPETEN No. 2 Tahun 2008 – Evaluasi Tapak Reaktor Daya untuk Aspek Kegunungapian' },
+    { f:'SJDIH-BAPETEN_1_000077_1.pdf', t:'Perka BAPETEN No. 3 Tahun 2008 – Evaluasi Tapak Reaktor Daya untuk Aspek Dispersi Zat Radioaktif Di Udara dan Air' },
+    { f:'SJDIH-BAPETEN_1_000083_1.pdf', t:'Perka BAPETEN No. 4 Tahun 2008 – Evaluasi Tapak Reaktor Daya untuk Aspek Geoteknik dan Pondasi' },
+    { f:'SJDIH-BAPETEN_1_000078_1.pdf', t:'Perka BAPETEN No. 5 Tahun 2008 – Evaluasi Tapak Reaktor Daya untuk Aspek Meteorologi' },
+    { f:'SJDIH-BAPETEN_1_000079_1.pdf', t:'Perka BAPETEN No. 6 Tahun 2008 – Evaluasi Tapak Reaktor Daya untuk Aspek Kejadian Eksternal Akibat Ulah Manusia' },
+    { f:'SJDIH-BAPETEN_1_000049_1.pdf', t:'Perka BAPETEN No. 8 Tahun 2008 – Ketentuan Keselamatan Manajemen Penuaan Reaktor Nondaya' },
+    { f:'SJDIH-BAPETEN_1_000080_1.pdf', t:'Perka BAPETEN No. 9 Tahun 2008 – Penyusunan dan Format Deklarasi Dalam Pelaksanaan Protokol Tambahan' },
+    { f:'SJDIH-BAPETEN_1_000081_1.pdf', t:'Perka BAPETEN No. 10 Tahun 2008 – Izin Bekerja Petugas Instalasi dan Bahan Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000091_1.pdf', t:'Perka BAPETEN No. 14 Tahun 2008 – Pencabutan Perka No. 18/KA-BAPETEN/II-00' },
+    { f:'SJDIH-BAPETEN_1_000102_1.pdf', t:'Perka BAPETEN No. 15 Tahun 2008 – Persyaratan untuk Memperoleh Surat Izin Bekerja Petugas Tertentu' },
+    { f:'SJDIH-BAPETEN_1_000065_1.pdf', t:'Perka BAPETEN No. 5 Tahun 2007 – Ketentuan Keselamatan Evaluasi Tapak Reaktor Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000067_1.pdf', t:'Perka BAPETEN No. 7 Tahun 2007 – Keamanan Sumber Radioaktif' },
+    { f:'SJDIH-BAPETEN_1_000071_1.pdf', t:'Perka BAPETEN No. 11 Tahun 2007 – Ketentuan Keselamatan Instalasi Nuklir Non Reaktor' },
+    { f:'SJDIH-BAPETEN_1_000074_1.pdf', t:'Perka BAPETEN No. 14 Tahun 2007 – Satuan Tanggap Darurat' },
+    { f:'SJDIH-BAPETEN_1_000050_1.pdf', t:'Perka BAPETEN No. 1 Tahun 2006 – Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi dan Keluaran Sumber Radiasi Terapi' },
+    { f:'SJDIH-BAPETEN_1_000052_1.pdf', t:'Perka BAPETEN No. 3 Tahun 2006 – Perizinan Instalasi Nuklir Non Reaktor' },
+    { f:'SJDIH-BAPETEN_1_000058_1.pdf', t:'Perka BAPETEN No. 9 Tahun 2006 – Pelaksanaan Protokol Tambahan Pada Sistem Pertanggungjawaban dan Pengendalian Bahan Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000059_1.pdf', t:'Perka BAPETEN No. 10 Tahun 2006 – Pedoman Penyusunan Laporan Analisis Keselamatan Instalasi Nuklir Nonreaktor' },
+    { f:'SJDIH-BAPETEN_1_000040_1.pdf', t:'Perka BAPETEN No. 2 Tahun 2005 – Sistem Pertanggungjawaban dan Pengendalian Bahan Nuklir' },
+  ]},
+
+  // ── 18. KEPUTUSAN KEPALA BAPETEN ─────────────────────────
+  { id:'s18', title:'Keputusan Kepala BAPETEN', cat:'kepka', items:[
+    { f:'SJDIH-BAPETEN_1_000035_1.pdf', t:'Kepka BAPETEN No. 01-P/Ka-BAPETEN/I-03 – Pedoman Dosis Pasien Radiodiagnostik' },
+    { f:'SJDIH-BAPETEN_1_000120_1.pdf', t:'Kepka BAPETEN No. 02-P/Ka-BAPETEN/I-03 – Sistem Pelayanan Pemantauan Dosis Eksterna Perorangan' },
+    { f:'SJDIH-BAPETEN_1_000036_1.pdf', t:'Kepka BAPETEN No. 03-P/Ka-BAPETEN/I-03 – Persyaratan Laboratorium Uji Bungkusan Zat Radioaktif Tipe A dan Tipe B' },
+    { f:'SJDIH-BAPETEN_1_000037_1.pdf', t:'Kepka BAPETEN No. 04-P/Ka-BAPETEN/I-03 – Pedoman Pelatihan Operator dan Supervisor Reaktor Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000034_1.pdf', t:'Kepka BAPETEN No. 05-P/Ka-BAPETEN/I-03 – Pedoman Rencana Penanggulangan Keadaan Darurat' },
+    { f:'SJDIH-BAPETEN_1_000033_1.pdf', t:'Kepka BAPETEN No. 07-P/Ka-BAPETEN/I-02 – Pedoman Dekomisioning Fasilitas Medis, Industri dan Penelitian serta Instalasi Nuklir Non-Reaktor' },
+    { f:'SJDIH-BAPETEN_1_000109_1.pdf', t:'Kepka BAPETEN No. 21/Ka-BAPETEN/XII-02 – Program Jaminan Kualitas Instalasi Radioterapi' },
+    { f:'SJDIH-BAPETEN_1_000018_1.pdf', t:'Kepka BAPETEN No. 05-P/Ka-BAPETEN/VII-00 – Pedoman Persyaratan untuk Keselamatan Pengangkutan Zat Radioaktif' },
+    { f:'SJDIH-BAPETEN_1_000101_1.pdf', t:'Kepka BAPETEN No. 06-P/Ka-BAPETEN/XI-00 – Pedoman Pembuatan Laporan Analisis Keselamatan Reaktor Penelitian' },
+    { f:'SJDIH-BAPETEN_1_000011_1.pdf', t:'Kepka BAPETEN No. 01/Ka-BAPETEN/V-99 – Ketentuan Keselamatan Kerja Terhadap Radiasi' },
+    { f:'SJDIH-BAPETEN_1_000012_1.pdf', t:'Kepka BAPETEN No. 01-P/Ka-BAPETEN/VI-99 – Pedoman Penentuan Tapak Reaktor Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000013_1.pdf', t:'Kepka BAPETEN No. 02/Ka-BAPETEN/V-99 – Baku Tingkat Radioaktivitas Di Lingkungan' },
+    { f:'SJDIH-BAPETEN_1_000014_1.pdf', t:'Kepka BAPETEN No. 03/Ka-BAPETEN/V-99 – Ketentuan Keselamatan untuk Pengelolaan Limbah Radioaktif' },
+    { f:'SJDIH-BAPETEN_1_000118_1.pdf', t:'Kepka BAPETEN No. 04/Ka-BAPETEN/V-99 – Ketentuan Keselamatan untuk Pengangkutan Zat Radioaktif' },
+    { f:'SJDIH-BAPETEN_1_000016_1.pdf', t:'Kepka BAPETEN No. 04-P/Ka-BAPETEN/VI-99 – Pedoman Teknis Penyusunan AMDAL Rencana Pembangunan dan Pengoperasian Instalasi Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000017_1.pdf', t:'Kepka BAPETEN No. 05/Ka-BAPETEN/V-99 – Ketentuan Keselamatan Desain Reaktor Penelitian' },
+    { f:'SJDIH-BAPETEN_1_000019_1.pdf', t:'Kepka BAPETEN No. 06/Ka-BAPETEN/V-99 – Pembangunan dan Pengoperasian Reaktor Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000020_1.pdf', t:'Kepka BAPETEN No. 07/Ka-BAPETEN/V-99 – Jaminan Kualitas Instalasi Nuklir' },
+    { f:'SJDIH-BAPETEN_1_000024_1.pdf', t:'Kepka BAPETEN No. 10/Ka-BAPETEN/VI-99 – Ketentuan Keselamatan Operasi Reaktor Penelitian' },
+    { f:'SJDIH-BAPETEN_1_000025_1.pdf', t:'Kepka BAPETEN No. 11/Ka-BAPETEN/VI-99 – Izin Konstruksi dan Operasi Iradiator' },
+    { f:'SJDIH-BAPETEN_1_000026_1.pdf', t:'Kepka BAPETEN No. 12/Ka-BAPETEN/VI-99 – Ketentuan Keselamatan Kerja Penambangan dan Pengolahan Bahan Galian Radioaktif' },
+    { f:'SJDIH-BAPETEN_1_000028_1.pdf', t:'Kepka BAPETEN No. 14/Ka-BAPETEN/VI-99 – Ketentuan Keselamatan Pabrik Kaos Lampu' },
+  ]},
+
+  // ── 19. SURAT EDARAN ─────────────────────────────────────
+  { id:'s19', title:'Surat Edaran Kepala BAPETEN', cat:'se', items:[
+    { f:'Bapeten_SE.0556KIII2020.2020.pdf',            t:'SE Kepala BAPETEN No. 0556/K/III/2020 – Protokol Internal Keamanan Zat Radioaktif' },
+    { f:'Bapeten_SE.0555KIII2020.2020.pdf',            t:'SE Kepala BAPETEN No. 0555/K/III/2020 – Protokol Keamanan Zat Radioaktif' },
+    { f:'Bapeten_SE.0842KIV2020.2020.pdf',             t:'SE Kepala BAPETEN No. 0842/K/IV/2020 – Kebijakan Perizinan Pemanfaatan Sumber Radiasi Pengion Pada Masa COVID-19' },
+    { f:'Bapeten_SE.0909KV2020.2020.pdf',              t:'SE Kepala BAPETEN No. 0909/K/V/2020 – Kebijakan Perizinan Petugas Instalasi dan Bahan Nuklir Pada Masa COVID-19' },
+    { f:'Bapeten_SE.140KI2020.2020.pdf',               t:'Keputusan Kepala BAPETEN No. 0140/K/I/2020 – Pendelegasian Wewenang Pemberian Izin Operasional Usaha Ketenaganukliran' },
+    { f:'Bapeten_SE.1904.2019.pdf',                    t:'SE Kepala BAPETEN No. 1904/PI 05/K/IX/2019 – Percepatan Evaluasi Hasil Uji Kesesuaian Pesawat Sinar-X Radiologi Diagnostik dan Intervensional' },
+    { f:'Bapeten_SE.1905PI 02 01KIX2019.2019.pdf',     t:'SE Kepala BAPETEN No. 1905/PI 02 01/K/IX/2019 – Pembatasan Penggunaan Kamera Radiografi Gammamat Tipe 5/1 dan Tsi 3/1' },
+  ]},
+
+  // ── 20. SOP & PANDUAN INDUSTRI ───────────────────────────
+  { id:'s20', title:'SOP & Buku Panduan Industri', cat:'sop', items:[
+    { f:'1. Buku Panduan Gauging PRP Energi Rendah.pdf',   t:'Buku Panduan Permohonan Izin Gauging Industri dengan Pembangkit Radiasi Pengion Energi Rendah' },
+    { f:'2. Buku Panduan Radiografi Bidang Industri ZRA.pdf', t:'Buku Panduan Permohonan Izin Penggunaan SRP untuk Kegiatan Uji Tak Rusak (ZRA)' },
+    { f:'3. Buku Panduan Permohonan Izin radiografi Pesawat sinar-x.pdf', t:'Buku Panduan Permohonan Izin Radiografi Industri Fasilitas Terbuka (Pesawat Sinar-X)' },
+    { f:'4. Buku Panduan Permohonan Izin Radiografi Industri Fasilitas Terbuka (Crawler).pdf', t:'Buku Panduan Permohonan Izin Radiografi Industri Fasilitas Terbuka (Crawler)' },
+    { f:'5. Buku Panduan Gauging ZRA.pdf',                 t:'Buku Panduan Permohonan Izin Gauging Industri Dengan Zat Radioaktif' },
+    { f:'6. Buku Panduan Well Logging.pdf',                t:'Buku Panduan Permohonan Izin Penggunaan Well Logging' },
+    { f:'7. Panduan Izin Fotofluorografi Dengan ZRA.pdf',  t:'Buku Panduan Permohonan Izin Fotofluorografi dengan Zat Radioaktif' },
+    { f:'8. Buku Panduan Foto fluorografi dengan PRP.pdf', t:'Buku Panduan Permohonan Izin Fotofluorografi dengan Pembangkit Radiasi Pengion (PRP)' },
+    { f:'9. Buku Panduan Permohonan Izin Impor ZRA untuk Keperluan selain Medik.pdf', t:'Buku Panduan Permohonan Izin Impor Zat Radioaktif untuk Keperluan Selain Medik' },
+    { f:'11. Buku Panduan Permohonan Penetapan Penghentian Kegiatan Pemanfaatan SRP untuk Keperluan Selain Medik.pdf', t:'Buku Panduan Permohonan Penetapan Penghentian Kegiatan Pemanfaatan SRP untuk Keperluan Selain Medik' },
+    { f:'Pos Tarif 2844.pdf',                              t:'HS Code BTKI 2022 – Lartas BAPETEN' },
+  ]},
+
+  // ── 21. PANDUAN TEKNIS & IK ──────────────────────────────
+  { id:'s21', title:'Panduan Teknis & Instruksi Kerja (IK)', cat:'panduan', items:[
+    { f:'01_Standar_Pelayanan_Fasilitas_Penelitian_dan_Industri_Rev.0_24062019.pdf', t:'Standar Pelayanan Perizinan Fasilitas Penelitian dan Industri' },
+    { f:'Buku_Panduan_Permohonan_Izin_Impor_PRP_untuk_Keperluan_selain_Medik.pdf',  t:'Buku Panduan Permohonan Izin Impor PRP untuk Keperluan Selain Medik' },
+    { f:'Pedoman_Penyusunan_Laporan_Verifikasi_Keselamatan_Radiasi_Gauging.pdf',     t:'Panduan Penyusunan Laporan Verifikasi Keselamatan Radiasi – Gauging Industri' },
+    { f:'Pedoman_Penyusunan_Laporan_Verifikasi_Keselamatan_Radiasi_Radiografi_Industri.pdf', t:'Panduan Penyusunan Laporan Verifikasi Keselamatan Radiasi – Radiografi Industri' },
+    { f:'Pedoman_Penyusunan_Laporan_Verifikasi_Keselamatan_Radiasi_Well_logging.pdf',t:'Panduan Penyusunan Laporan Verifikasi Keselamatan Radiasi – Well Logging' },
+    { f:'Pedoman_Penyusunan_Program_Proteksi_dan_Keselamatan_Radiasi_Gauging.pdf',   t:'Panduan Penyusunan Program Proteksi dan Keselamatan Radiasi – Gauging Industri' },
+    { f:'Pedoman_Penyusunan_Program_Proteksi_dan_Keselamatan_Radiasi_Radiografi_Industri.pdf', t:'Panduan Penyusunan Program Proteksi dan Keselamatan Radiasi – Radiografi Industri' },
+    { f:'Pedoman_Penyusunan_Program_Proteksi_dan_Keselamatan_Radiasi_Well_Logging.pdf', t:'Panduan Penyusunan Program Proteksi dan Keselamatan Radiasi – Well Logging' },
+    { f:'Pedoman_Penyusunan_Prosedur_Operasi_Gauging.pdf',        t:'Panduan Penyusunan Prosedur Operasi – Gauging Industri' },
+    { f:'Pedoman_Penyusunan_Prosedur_Operasi_Radiografi_Industri.pdf', t:'Panduan Penyusunan Prosedur Operasi – Radiografi Industri' },
+    { f:'Pedoman_Penyusunan_Prosedur_Operasi_Well_Logging.pdf',   t:'Panduan Penyusunan Prosedur Operasi – Well Logging' },
+    { f:'01 IK Evaluasi Izin Impor PRP.pdf',                      t:'IK-01 – Evaluasi Izin Impor PRP' },
+    { f:'02 IK Evaluasi Permohonan Izin Expor PRP.pdf',           t:'IK-02 – Evaluasi Permohonan Izin Ekspor PRP' },
+    { f:'03 IK Evaluasi Persetujuan Impor ZRA.pdf',               t:'IK-03 – Evaluasi Persetujuan Impor ZRA' },
+    { f:'04 IK Evaluasi Persetujuan Ekspor ZRA selain Medik.pdf', t:'IK-04 – Evaluasi Persetujuan Ekspor ZRA selain Medik' },
+    { f:'05 IK Evaluasi Izin Perunut.pdf',                        t:'IK-05 – Evaluasi Izin Perunut' },
+    { f:'06 IK IRRADIATOR PRP KAT II.pdf',                        t:'IK-06 – Irradiator PRP Kategori II' },
+    { f:'07 IK Izin Well Logging.pdf',                            t:'IK-07 – Izin Well Logging' },
+    { f:'08 ik konstruksi radiografi tertutup.pdf',               t:'IK-08 – Konstruksi Radiografi Tertutup' },
+    { f:'09 IK Fotofluorografi.pdf',                              t:'IK-09 – Fotofluorografi' },
+    { f:'10 IK radiografi industri (gamma).pdf',                  t:'IK-10 – Radiografi Industri (Gamma)' },
+    { f:'11 IK Pengangkutan.pdf',                                 t:'IK-11 – Pengangkutan' },
+    { f:'12 IK Pemberhentian.pdf',                                t:'IK-12 – Pemberhentian' },
+    { f:'13 IK OSS.pdf',                                          t:'IK-13 – OSS (Online Single Submission)' },
+    { f:'14 IK PPR.pdf',                                          t:'IK-14 – Petugas Proteksi Radiasi (PPR)' },
+    { f:'15_IK Radiologi Diagnostik.pdf',                         t:'IK-15 – Radiologi Diagnostik' },
+    { f:'16 IK Impor PRP.pdf',                                    t:'IK-16 – Impor PRP' },
+    { f:'17_IK Persetujuan Impor ZRA.pdf',                        t:'IK-17 – Persetujuan Impor ZRA' },
+    { f:'18 IK impor ZRA.pdf',                                    t:'IK-18 – Impor ZRA' },
+    { f:'19 IK KN In Vitro.pdf',                                  t:'IK-19 – Kedokteran Nuklir In Vitro' },
+    { f:'20 IK KN In Vivo.pdf',                                   t:'IK-20 – Kedokteran Nuklir In Vivo' },
+    { f:'21 IK KN Terapi.pdf',                                    t:'IK-21 – Kedokteran Nuklir Terapi' },
+    { f:'22 IK Konstruksi Radioterapi.pdf',                       t:'IK-22 – Konstruksi Radioterapi' },
+    { f:'23 IK Operasi Radioterapi.pdf',                          t:'IK-23 – Operasi Radioterapi' },
+    { f:'24 IK Radioterapi ZRA.pdf',                              t:'IK-24 – Radioterapi ZRA' },
+    { f:'25 IK Produksi Radioisotop.pdf',                         t:'IK-25 – Produksi Radioisotop' },
+    { f:'26 IK Penetapan Penghentian Kegiatan.pdf',               t:'IK-26 – Penetapan Penghentian Kegiatan' },
+    { f:'27 IK Persetujuan Pengiriman.pdf',                       t:'IK-27 – Persetujuan Pengiriman' },
+    { f:'28_IK Persetujuan Impor PRP.pdf',                        t:'IK-28 – Persetujuan Impor PRP' },
+    { f:'29 Instruksi Kerja Penyimpanan dan Peminjaman untuk Dokumen serta Rekaman pada Cloud DPFRZR 30092019.pdf', t:'IK-29 – Penyimpanan dan Peminjaman Dokumen serta Rekaman pada Cloud DPFRZR' },
+    { f:'30 Instruksi Kerja Kuisioner Penyusunan _ Pelaksanaan Kuesioner Survei Kepuasan Masyarakat.pdf', t:'IK-30 – Kuesioner Penyusunan & Pelaksanaan Survei Kepuasan Masyarakat' },
+  ]},
+];
+
+// ==========================================================
+// RENDER ENGINE
+// ==========================================================
+let activeFilter = 'all';
+let query = '';
+
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') }
+
+function hi(text, q){
+  if(!q) return esc(text);
+  const re = new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+  return esc(text).replace(re, m=>`<mark>${m}</mark>`);
+}
+
+function render(){
+  const q2 = query.toLowerCase();
+  const container = document.getElementById('container');
+  const empty = document.getElementById('empty');
+  const badge = document.getElementById('sBadge');
+  let html = '';
+  let totalVisible = 0;
+
+  SECTIONS.forEach(sec => {
+    if(activeFilter !== 'all' && sec.cat !== activeFilter) return;
+    const items = sec.items.filter(it => !q2 || it.t.toLowerCase().includes(q2));
+    if(!items.length) return;
+    totalVisible += items.length;
+
+    const stripe = STRIPE[sec.cat] || 'stripe-uu';
+    const isOpen = q2 ? true : (sec._open !== false);
+
+    html += `<div class="section${isOpen?' open':''}" id="SEC${sec.id}">
+      <div class="sec-head" onclick="toggle('${sec.id}')">
+        <div class="sec-stripe ${stripe}"></div>
+        <div class="sec-title">${esc(sec.title)}</div>
+        <div class="sec-count">${items.length}</div>
+        <svg class="sec-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="sec-body"><div class="item-list">`;
+
+    items.forEach((it,i)=>{
+      const href = BASE + encodeURIComponent(it.f);
+      html += `<div class="item">
+        <span class="item-num">${i+1}</span>
+        <div class="item-content">
+          <a class="item-link" href="${href}" target="_blank" rel="noopener noreferrer">${hi(it.t, query)}</a>
+        </div>
+      </div>`;
+    });
+
+    html += `</div></div></div>`;
+  });
+
+  container.innerHTML = html;
+  empty.style.display = totalVisible === 0 ? 'block' : 'none';
+
+  // badge
+  if(q2){
+    badge.textContent = totalVisible + ' hasil';
+    badge.style.display = 'block';
+  } else {
+    badge.style.display = 'none';
+  }
+
+  // update total header
+  const grand = SECTIONS.reduce((a,s)=>a+s.items.length,0);
+  document.getElementById('hTotal').textContent = grand;
+}
+
+function toggle(id){
+  const el = document.getElementById('SEC'+id);
+  if(!el) return;
+  const open = el.classList.toggle('open');
+  const sec = SECTIONS.find(s=>s.id===id);
+  if(sec) sec._open = open;
+}
+
+// Tab click
+document.getElementById('tabs').addEventListener('click', e=>{
+  const tab = e.target.closest('.tab');
+  if(!tab) return;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  activeFilter = tab.dataset.f;
+  render();
+});
+
+// Search
+document.getElementById('q').addEventListener('input', e=>{
+  query = e.target.value.trim();
+  render();
+});
+
+// Init
+render();
+</script>
 </body>
 </html>
