@@ -15,61 +15,77 @@
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);min-height:100vh;}
 header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,#1e4080 100%);position:relative;overflow:hidden;}
-header::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none;}
-.header-inner{max-width:1140px;margin:0 auto;padding:40px 24px 32px;display:flex;align-items:center;gap:20px;position:relative;z-index:1;}
-.atom-icon{width:64px;height:64px;flex-shrink:0;}
-.header-text h1{font-family:'DM Serif Display',serif;font-size:2.1rem;color:#fff;line-height:1.1;}
+header::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none;}
+.header-inner{max-width:1140px;margin:0 auto;padding:36px 24px 28px;display:flex;align-items:center;gap:20px;position:relative;z-index:1;}
+.atom-icon{width:60px;height:60px;flex-shrink:0;}
+.header-text h1{font-family:'DM Serif Display',serif;font-size:2rem;color:#fff;line-height:1.1;}
 .header-text h1 em{font-style:italic;color:var(--teal-light);}
-.header-text p{color:rgba(255,255,255,.55);font-size:.82rem;margin-top:6px;font-weight:300;}
+.header-text p{color:rgba(255,255,255,.5);font-size:.8rem;margin-top:5px;font-weight:300;}
 .header-stats{margin-left:auto;flex-shrink:0;display:flex;gap:20px;}
 .hstat{text-align:right;}
-.hstat-num{font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--teal-light);line-height:1;}
-.hstat-label{font-size:.7rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.8px;margin-top:2px;}
-.tabs-wrap{background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;z-index:100;}
-.tabs{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;overflow-x:auto;scrollbar-width:none;}
-.tabs::-webkit-scrollbar{display:none}
-.tab{padding:14px 20px;font-size:.78rem;font-weight:500;letter-spacing:.4px;color:rgba(255,255,255,.5);cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;transition:all .2s;text-transform:uppercase;}
-.tab:hover{color:rgba(255,255,255,.8)}
-.tab.active{color:#fff;border-bottom-color:var(--teal-light);}
-main{max-width:1140px;margin:0 auto;padding:28px 24px 80px;}
-.search-wrap{position:relative;margin-bottom:24px;}
-.search-wrap input{width:100%;padding:15px 20px 15px 50px;border:2px solid var(--border);border-radius:12px;background:var(--paper);font-family:'DM Sans',sans-serif;font-size:.95rem;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s;}
+.hstat-num{font-family:'DM Serif Display',serif;font-size:1.7rem;color:var(--teal-light);line-height:1;}
+.hstat-label{font-size:.65rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.8px;margin-top:2px;}
+
+.filters-wrap{background:var(--navy);border-bottom:2px solid rgba(255,255,255,.06);position:sticky;top:0;z-index:100;}
+.filter-row{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.05);}
+.filter-row:last-child{border-bottom:none}
+.filter-label{font-size:.6rem;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:1px;white-space:nowrap;padding-right:12px;min-width:68px;}
+.tabs-scroll{display:flex;overflow-x:auto;scrollbar-width:none;flex:1;}
+.tabs-scroll::-webkit-scrollbar{display:none}
+.tab{padding:10px 16px;font-size:.72rem;font-weight:500;letter-spacing:.3px;color:rgba(255,255,255,.45);cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;transition:all .18s;text-transform:uppercase;}
+.tab:hover{color:rgba(255,255,255,.75)}
+.tab.active{color:#fff;}
+.row-jenis .tab.active{border-bottom-color:var(--teal-light);}
+.row-tematik .tab.active{border-bottom-color:#f59e0b;color:#fbbf24;}
+.row-tahun .tab.active{border-bottom-color:#a78bfa;color:#c4b5fd;}
+/* Baris tahun bisa disembunyikan */
+#rowTahun{transition:opacity .2s;}
+
+main{max-width:1140px;margin:0 auto;padding:24px 24px 80px;}
+.search-wrap{position:relative;margin-bottom:16px;}
+.search-wrap input{width:100%;padding:14px 20px 14px 48px;border:2px solid var(--border);border-radius:12px;background:var(--paper);font-family:'DM Sans',sans-serif;font-size:.93rem;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s;}
 .search-wrap input:focus{border-color:var(--teal);box-shadow:0 0 0 4px rgba(14,116,144,.1);}
 .search-wrap input::placeholder{color:var(--muted);font-style:italic}
-.s-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;}
-.s-badge{position:absolute;right:16px;top:50%;transform:translateY(-50%);background:var(--navy2);color:#fff;font-size:.7rem;font-weight:600;padding:3px 9px;border-radius:20px;display:none;}
-.section{background:var(--paper);border:1px solid var(--border);border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04);}
-.sec-head{display:flex;align-items:center;gap:12px;padding:16px 20px;cursor:pointer;transition:background .15s;user-select:none;}
+.s-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;}
+.s-badge{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:var(--navy2);color:#fff;font-size:.68rem;font-weight:600;padding:3px 9px;border-radius:20px;display:none;}
+
+.active-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;min-height:0;}
+.filter-chip{display:inline-flex;align-items:center;gap:5px;background:var(--navy2);color:#fff;font-size:.72rem;padding:4px 10px;border-radius:20px;cursor:pointer;}
+.filter-chip span{opacity:.5;font-size:.8rem;}
+.filter-chip:hover{background:#1e3a6e}
+
+.section{background:var(--paper);border:1px solid var(--border);border-radius:12px;margin-bottom:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:14px 18px;cursor:pointer;transition:background .15s;user-select:none;}
 .sec-head:hover{background:#f9f8f6}
-.sec-stripe{width:4px;height:36px;border-radius:4px;flex-shrink:0;}
-.sec-title{font-family:'DM Serif Display',serif;font-size:1rem;color:var(--navy);flex:1;line-height:1.3;}
-.sec-count{background:var(--navy);color:#fff;font-size:.68rem;font-weight:600;padding:3px 10px;border-radius:20px;flex-shrink:0;}
+.sec-stripe{width:4px;height:32px;border-radius:4px;flex-shrink:0;}
+.sec-title{font-family:'DM Serif Display',serif;font-size:.95rem;color:var(--navy);flex:1;line-height:1.3;}
+.sec-count{background:var(--navy);color:#fff;font-size:.65rem;font-weight:600;padding:2px 9px;border-radius:20px;flex-shrink:0;}
 .sec-chevron{color:var(--muted);transition:transform .25s;flex-shrink:0;}
 .section.open .sec-chevron{transform:rotate(180deg)}
 .sec-body{display:none;border-top:1px solid var(--border);}
 .section.open .sec-body{display:block}
 .item-list{padding:4px 0}
-.item{display:flex;align-items:flex-start;gap:12px;padding:10px 20px 10px 28px;border-bottom:1px solid #f3f0eb;transition:background .1s;}
+.item{display:flex;align-items:flex-start;gap:10px;padding:9px 18px 9px 26px;border-bottom:1px solid #f3f0eb;transition:background .1s;}
 .item:last-child{border-bottom:none}
 .item:hover{background:#fafaf8}
-.item-num{flex-shrink:0;font-size:.7rem;color:#bbb;min-width:20px;padding-top:3px;font-style:italic;}
+.item-num{flex-shrink:0;font-size:.68rem;color:#ccc;min-width:18px;padding-top:3px;font-style:italic;}
 .item-content{flex:1;min-width:0}
-.item-link{color:var(--teal);text-decoration:none;font-size:.88rem;line-height:1.55;display:block;transition:color .15s;}
+.item-link{color:var(--teal);text-decoration:none;font-size:.86rem;line-height:1.55;display:block;transition:color .15s;}
 .item-link:hover{color:var(--navy);text-decoration:underline}
-.item-link::before{content:'📄 ';font-size:.75rem;}
+.item-link::before{content:'📄 ';font-size:.73rem;}
 mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 1px}
-.empty{display:none;text-align:center;padding:64px 24px;color:var(--muted);}
-.empty p{font-style:italic;font-size:.9rem}
+.empty{display:none;text-align:center;padding:56px 24px;color:var(--muted);}
+.empty p{font-style:italic;font-size:.88rem}
 .stripe-uu{background:#3b82f6}.stripe-pp{background:#8b5cf6}.stripe-perpres{background:#06b6d4}
 .stripe-perka{background:var(--green)}.stripe-kepka{background:var(--amber)}.stripe-se{background:#dc2626}
 .stripe-panduan{background:#ec4899}
-.guide{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:1px solid #bae6fd;border-radius:12px;padding:16px 20px;margin-bottom:24px;display:flex;gap:12px;}
-.guide-icon{font-size:1.4rem;flex-shrink:0}
-.guide-text{font-size:.82rem;color:#0c4a6e;line-height:1.6}
+.guide{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:1px solid #bae6fd;border-radius:10px;padding:14px 18px;margin-bottom:16px;display:flex;gap:10px;}
+.guide-icon{font-size:1.3rem;flex-shrink:0;padding-top:1px;}
+.guide-text{font-size:.8rem;color:#0c4a6e;line-height:1.65}
 .guide-text strong{font-weight:600}
-footer{background:var(--navy);color:rgba(255,255,255,.4);text-align:center;padding:20px 24px;font-size:.75rem;}
+footer{background:var(--navy);color:rgba(255,255,255,.4);text-align:center;padding:18px 24px;font-size:.73rem;}
 footer a{color:rgba(255,255,255,.6);text-decoration:none}
-@media(max-width:640px){.header-stats{display:none}.header-text h1{font-size:1.5rem}.atom-icon{width:48px;height:48px}}
+@media(max-width:640px){.header-stats{display:none}.header-text h1{font-size:1.5rem}.atom-icon{width:44px;height:44px}}
 </style>
 </head>
 <body>
@@ -86,70 +102,155 @@ footer a{color:rgba(255,255,255,.6);text-decoration:none}
       <p>Badan Pengawas Tenaga Nuklir · BAPETEN · Versi 3.0</p>
     </div>
     <div class="header-stats">
-      <div class="hstat"><div class="hstat-num" id="hTotal">—</div><div class="hstat-label">Dokumen</div></div>
-      <div class="hstat"><div class="hstat-num">7</div><div class="hstat-label">Kategori</div></div>
+      <div class="hstat"><div class="hstat-num" id="hTotal">—</div><div class="hstat-label">Total</div></div>
+      <div class="hstat"><div class="hstat-num" id="hVisible">—</div><div class="hstat-label">Tampil</div></div>
     </div>
   </div>
 </header>
 
-<div class="tabs-wrap">
-  <div class="tabs" id="tabs">
-    <div class="tab active" data-f="all">Semua</div>
-    <div class="tab" data-f="uu">UU</div>
-    <div class="tab" data-f="pp">PP</div>
-    <div class="tab" data-f="perpres">Perpres / Keppres</div>
-    <div class="tab" data-f="perka">Peraturan BAPETEN</div>
-    <div class="tab" data-f="kepka">Kepka BAPETEN</div>
-    <div class="tab" data-f="se">Surat Edaran</div>
-    <div class="tab" data-f="panduan">Panduan & IK</div>
+<div class="filters-wrap">
+  <!-- BARIS 1: Jenis -->
+  <div class="filter-row row-jenis">
+    <span class="filter-label">Jenis</span>
+    <div class="tabs-scroll" id="tabsJenis">
+      <div class="tab active" data-f="all">Semua</div>
+      <div class="tab" data-f="uu">UU</div>
+      <div class="tab" data-f="pp">PP</div>
+      <div class="tab" data-f="perpres">Perpres/Keppres</div>
+      <div class="tab" data-f="perka">Peraturan BAPETEN</div>
+      <div class="tab" data-f="kepka">Kepka BAPETEN</div>
+      <div class="tab" data-f="se">Surat Edaran</div>
+      <div class="tab" data-f="panduan">Panduan &amp; IK</div>
+    </div>
+  </div>
+  <!-- BARIS 2: Tematik -->
+  <div class="filter-row row-tematik">
+    <span class="filter-label">Tematik</span>
+    <div class="tabs-scroll" id="tabsTematik">
+      <div class="tab active" data-t="all">Semua Bidang</div>
+      <div class="tab" data-t="industri">⚙️ Industri</div>
+      <div class="tab" data-t="medik">🏥 Medik</div>
+      <div class="tab" data-t="instalasi">🏭 Instalasi Nuklir</div>
+    </div>
+  </div>
+  <!-- BARIS 3: Tahun — hanya tampil saat Jenis = Perka atau Kepka -->
+  <div class="filter-row row-tahun" id="rowTahun" style="display:none">
+    <span class="filter-label">Tahun</span>
+    <div class="tabs-scroll" id="tabsTahun">
+      <div class="tab active" data-y="all">Semua</div>
+      <!-- Diisi otomatis oleh JS -->
+    </div>
   </div>
 </div>
 
 <main>
   <div class="guide">
     <div class="guide-icon">💡</div>
-    <div class="guide-text"><strong>Cara penggunaan:</strong> Gunakan kotak pencarian untuk menemukan peraturan. Klik judul untuk membuka PDF. Gunakan tab untuk menyaring berdasarkan jenis dokumen.</div>
+    <div class="guide-text">
+      <strong>Filter bisa dikombinasikan.</strong> Filter <em>Tahun</em> muncul otomatis saat memilih <em>Peraturan BAPETEN</em> atau <em>Kepka BAPETEN</em>, diurutkan dari terbaru ke terlama. Klik chip filter untuk mereset satu per satu.
+    </div>
   </div>
   <div class="search-wrap">
-    <svg class="s-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input type="text" id="q" placeholder="Cari nomor peraturan, tahun, atau topik…"/>
+    <svg class="s-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" id="q" placeholder="Cari nomor, tahun, atau topik peraturan…"/>
     <span class="s-badge" id="sBadge"></span>
   </div>
+  <div class="active-filters" id="activeFilters"></div>
   <div id="container"></div>
-  <div class="empty" id="empty"><p>Tidak ada peraturan yang cocok.</p></div>
+  <div class="empty" id="empty"><p>Tidak ada peraturan yang cocok dengan filter yang dipilih.</p></div>
 </main>
 
 <footer>
   <a href="https://github.com/krumboko/peraturan-ketenaganukliran" target="_blank">github.com/krumboko/peraturan-ketenaganukliran</a> · BAPETEN © 2024
 </footer>
 
-<!-- Data peraturan dimuat dari data.js -->
 <script src="data.js"></script>
-
 <script>
 const BASE = 'dokumen/';
 const STRIPE = {uu:'stripe-uu',pp:'stripe-pp',perpres:'stripe-perpres',perka:'stripe-perka',kepka:'stripe-kepka',se:'stripe-se',panduan:'stripe-panduan'};
 
-let activeFilter = 'all', query = '';
+// Jenis yang menampilkan filter Tahun
+const JENIS_WITH_TAHUN = ['perka','kepka'];
+
+let filterJenis='all', filterTematik='all', filterTahun='all', query='';
+
+// ── Ambil tahun unik dari Perka/Kepka saja, urut terbaru ──
+function getTahunList(jenis){
+  const set=new Set();
+  SECTIONS.forEach(sec=>{
+    // Hanya dari section perka atau kepka
+    if(!JENIS_WITH_TAHUN.includes(sec.cat)) return;
+    // Jika jenis dipilih spesifik, hanya ambil dari jenis itu
+    if(jenis!=='all' && sec.cat!==jenis) return;
+    // Ambil tahun dari judul section
+    const tm=sec.title.match(/\b(19|20)\d{2}\b/g);
+    if(tm) tm.forEach(y=>set.add(y));
+    // Ambil dari nama file item
+    sec.items.forEach(it=>{
+      const m=it.f.match(/\b(19|20)\d{2}\b/);
+      if(m) set.add(m[0]);
+    });
+  });
+  return Array.from(set).sort((a,b)=>Number(b)-Number(a)); // terbaru dulu
+}
+
+// ── Tampil/sembunyikan & rebuild tab tahun ──
+function updateTahunRow(jenis){
+  const rowEl=document.getElementById('rowTahun');
+  const show=JENIS_WITH_TAHUN.includes(jenis);
+  rowEl.style.display=show?'':'none';
+
+  if(!show){ filterTahun='all'; return; }
+
+  // Rebuild: hapus semua tab kecuali "Semua"
+  const container=document.getElementById('tabsTahun');
+  container.querySelectorAll('.tab:not([data-y="all"])').forEach(t=>t.remove());
+
+  getTahunList(jenis).forEach(y=>{
+    const d=document.createElement('div');
+    d.className='tab'; d.dataset.y=y; d.textContent=y;
+    container.appendChild(d);
+  });
+
+  filterTahun='all';
+  setActiveTab('tabsTahun','all','y');
+}
+
+function matchTahun(item, tahun){
+  if(tahun==='all') return true;
+  const m=item.f.match(/\b(19|20)\d{2}\b/);
+  return m && m[0]===tahun;
+}
+
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function hi(t,q){if(!q)return esc(t);const re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');return esc(t).replace(re,m=>`<mark>${m}</mark>`)}
 
 function render(){
   const q2=query.toLowerCase();
-  let html='',total=0;
+  let html='',visible=0;
+
   SECTIONS.forEach(sec=>{
-    if(activeFilter!=='all'&&sec.cat!==activeFilter)return;
-    const items=sec.items.filter(it=>!q2||it.t.toLowerCase().includes(q2));
-    if(!items.length)return;
-    total+=items.length;
+    if(filterJenis!=='all'&&sec.cat!==filterJenis) return;
+
+    const items=sec.items.filter(it=>{
+      const matchT=filterTematik==='all'||(it.tag&&it.tag.includes(filterTematik));
+      const matchY=matchTahun(it,filterTahun);
+      const matchQ=!q2||it.t.toLowerCase().includes(q2);
+      return matchT&&matchY&&matchQ;
+    });
+
+    if(!items.length) return;
+    visible+=items.length;
     const stripe=STRIPE[sec.cat]||'stripe-uu';
-    const open=q2?true:(sec._open!==false);
+    const autoOpen=q2||filterTematik!=='all'||filterTahun!=='all';
+    const open=autoOpen?true:(sec._open!==false);
+
     html+=`<div class="section${open?' open':''}" id="SEC${sec.id}">
       <div class="sec-head" onclick="toggle('${sec.id}')">
         <div class="sec-stripe ${stripe}"></div>
         <div class="sec-title">${esc(sec.title)}</div>
         <div class="sec-count">${items.length}</div>
-        <svg class="sec-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        <svg class="sec-chevron" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
       <div class="sec-body"><div class="item-list">`;
     items.forEach((it,i)=>{
@@ -157,11 +258,41 @@ function render(){
     });
     html+=`</div></div></div>`;
   });
+
   document.getElementById('container').innerHTML=html;
-  document.getElementById('empty').style.display=total===0?'block':'none';
-  const badge=document.getElementById('sBadge');
-  if(q2){badge.textContent=total+' hasil';badge.style.display='block';}else{badge.style.display='none';}
+  document.getElementById('empty').style.display=visible===0?'block':'none';
   document.getElementById('hTotal').textContent=SECTIONS.reduce((a,s)=>a+s.items.length,0);
+  document.getElementById('hVisible').textContent=visible;
+
+  const badge=document.getElementById('sBadge');
+  if(q2){badge.textContent=visible+' hasil';badge.style.display='block';}
+  else{badge.style.display='none';}
+  updateChips();
+}
+
+function updateChips(){
+  const chips=document.getElementById('activeFilters');
+  const LABEL={uu:'UU',pp:'PP',perpres:'Perpres/Keppres',perka:'Peraturan BAPETEN',kepka:'Kepka BAPETEN',se:'Surat Edaran',panduan:'Panduan & IK'};
+  let html='';
+  if(filterJenis!=='all') html+=`<div class="filter-chip" onclick="resetFilter('jenis')">Jenis: <strong>${LABEL[filterJenis]||filterJenis}</strong> <span>✕</span></div>`;
+  if(filterTematik!=='all') html+=`<div class="filter-chip" onclick="resetFilter('tematik')">Tematik: <strong>${filterTematik}</strong> <span>✕</span></div>`;
+  if(filterTahun!=='all') html+=`<div class="filter-chip" onclick="resetFilter('tahun')">Tahun: <strong>${filterTahun}</strong> <span>✕</span></div>`;
+  if(query) html+=`<div class="filter-chip" onclick="resetFilter('query')">Cari: <strong>${esc(query)}</strong> <span>✕</span></div>`;
+  chips.innerHTML=html;
+}
+
+function resetFilter(type){
+  if(type==='jenis'){filterJenis='all';setActiveTab('tabsJenis','all','f');updateTahunRow('all');}
+  if(type==='tematik'){filterTematik='all';setActiveTab('tabsTematik','all','t');}
+  if(type==='tahun'){filterTahun='all';setActiveTab('tabsTahun','all','y');}
+  if(type==='query'){query='';document.getElementById('q').value='';}
+  render();
+}
+
+function setActiveTab(containerId,val,attr){
+  document.querySelectorAll(`#${containerId} .tab`).forEach(t=>{
+    t.classList.toggle('active',t.dataset[attr]===val);
+  });
 }
 
 function toggle(id){
@@ -170,12 +301,26 @@ function toggle(id){
   const sec=SECTIONS.find(s=>s.id===id);if(sec)sec._open=open;
 }
 
-document.getElementById('tabs').addEventListener('click',e=>{
+document.getElementById('tabsJenis').addEventListener('click',e=>{
   const tab=e.target.closest('.tab');if(!tab)return;
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  tab.classList.add('active');activeFilter=tab.dataset.f;render();
+  setActiveTab('tabsJenis',tab.dataset.f,'f');
+  filterJenis=tab.dataset.f;
+  updateTahunRow(filterJenis); // tampil/sembunyikan baris tahun
+  render();
+});
+document.getElementById('tabsTematik').addEventListener('click',e=>{
+  const tab=e.target.closest('.tab');if(!tab)return;
+  setActiveTab('tabsTematik',tab.dataset.t,'t');
+  filterTematik=tab.dataset.t; render();
+});
+document.getElementById('tabsTahun').addEventListener('click',e=>{
+  const tab=e.target.closest('.tab');if(!tab)return;
+  setActiveTab('tabsTahun',tab.dataset.y,'y');
+  filterTahun=tab.dataset.y; render();
 });
 document.getElementById('q').addEventListener('input',e=>{query=e.target.value.trim();render();});
+
+// Init
 render();
 </script>
 </body>
