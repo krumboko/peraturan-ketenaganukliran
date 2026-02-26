@@ -73,6 +73,9 @@ main{max-width:1140px;margin:0 auto;padding:24px 24px 80px;}
 .item-link{color:var(--teal);text-decoration:none;font-size:.86rem;line-height:1.55;display:block;transition:color .15s;}
 .item-link:hover{color:var(--navy);text-decoration:underline}
 .item-link::before{content:'📄 ';font-size:.73rem;}
+.item-lamps{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px;}
+.lamp-link{display:inline-block;font-size:.72rem;color:var(--muted);background:#f3f0eb;border:1px solid var(--border);border-radius:4px;padding:1px 8px;text-decoration:none;transition:all .15s;white-space:nowrap;}
+.lamp-link:hover{background:var(--teal);color:#fff;border-color:var(--teal);}
 mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 1px}
 .empty{display:none;text-align:center;padding:56px 24px;color:var(--muted);}
 .empty p{font-style:italic;font-size:.88rem}
@@ -254,7 +257,13 @@ function render(){
       </div>
       <div class="sec-body"><div class="item-list">`;
     items.forEach((it,i)=>{
-      html+=`<div class="item"><span class="item-num">${i+1}</span><div class="item-content"><a class="item-link" href="${BASE+encodeURIComponent(it.f)}" target="_blank">${hi(it.t,query)}</a></div></div>`;
+      let lampHtml = '';
+      if(it.lamp && it.lamp.length){
+        lampHtml = `<div class="item-lamps">📎 Lampiran: `
+          + it.lamp.map(l=>`<a class="lamp-link" href="${BASE+encodeURIComponent(l.f)}" target="_blank">${l.l}</a>`).join('')
+          + `</div>`;
+      }
+      html+=`<div class="item"><span class="item-num">${i+1}</span><div class="item-content"><a class="item-link" href="${BASE+encodeURIComponent(it.f)}" target="_blank">${hi(it.t,query)}</a>${lampHtml}</div></div>`;
     });
     html+=`</div></div></div>`;
   });
