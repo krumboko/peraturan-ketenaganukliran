@@ -1,2 +1,2 @@
-# PeraturanKetenaganukliran_Baru
+# Peraturan-Ketenaganukliran
 Daftar peraturan ketenaganukliran versi GitHub Pages
