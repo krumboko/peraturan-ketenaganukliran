@@ -33,7 +33,7 @@ const SECTIONS = [
 {l:'Lamp II.Perizinan Berusaha Sektor Ketenaganukliran PB_UMKU', f:'PP Nomor 28 Tahun 2025 - (Lamp II. PB-UMKU).pdf'},
 {l:'Lamp III.Metode Analisis Risiko', f:'PP Nomor 28 Tahun 2025 - (Lamp III. Metode Analisis Risiko).pdf'},{l:'Lamp IV.Pedoman Penyusunan Perba', f:'PP Nomor 28 Tahun 2025 - (Lamp IV.Pedoman Penyusunan Perba).pdf'}],
       tag:['industri','medik','instalasi'] },    
-{ f:'PP 45 Tahun 2023 - Keselamatan Radiasi Pengion dan Keamanan ZR.pdf',
+{ f:'PP 45 Tahun 2023 - Keselamatan Radiasi Pengion dan Keamanan Zat Radioaktif.pdf',
       t:'PP No. 45 Tahun 2023 – Keselamatan Radiasi Pengion dan Keamanan Zat Radioaktif', tag:['industri','medik'] },
     { f:'PP 42 Tahun 2022 - Jenis dan Tarif Atas Jenis Penerimaan Negara Bukan Pajak yang Berlaku pada Badan Pengawas Tenaga Nuklir.pdf',
       t:'PP No. 42 Tahun 2022 – Tarif dan Jenis PNBP yang Berlaku Pada BAPETEN', tag:['industri','medik','instalasi'] },
