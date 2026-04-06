@@ -30,7 +30,7 @@ const SECTIONS = [
 { f:'PP Nomor 28 Tahun 2025 - Penyelenggaraan Perizinan Berusaha Berbasis Risiko.pdf',
       t:'PP Nomor 28 Tahun 2025 - Penyelenggaraan Perizinan Berusaha Berbasis Risiko.pdf',
       lamp:[{l:'Lamp I.Perizinan Berusaha Sektor Ketenaganukliran KBLI', f:'PP Nomor 28 Tahun 2025 - (Lamp I. KBLI Ketenaganukliran).pdf'},
-{l:'Lamp II.Perizinan Berusaha Sektor Ketenaganukliran PB_UMKU', f:'PP Nomor 28 Tahun 2025 - (Lamp II. PB-UMKU).pdf'},
+{l:'Lamp II.Perizinan Berusaha Sektor Ketenaganukliran PB_UMKU', f:'dokumen/PP Nomor 28 Tahun 2025 - (Lamp II. PB - UMKU).pdf'},
 {l:'Lamp III.Metode Analisis Risiko', f:'PP Nomor 28 Tahun 2025 - (Lamp III. Metode Analisis Risiko).pdf'},{l:'Lamp IV.Pedoman Penyusunan Perba', f:'PP Nomor 28 Tahun 2025 - (Lamp IV.Pedoman Penyusunan Perba).pdf'}],
       tag:['industri','medik','instalasi'] },    
 { f:'PP 45 Tahun 2023 - Keselamatan Radiasi Pengion dan Keamanan Zat Radioaktif.pdf',
