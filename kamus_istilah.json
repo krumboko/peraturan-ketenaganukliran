@@ -1,5 +1,5 @@
 [
-{
+  {
     "istilah": "A1",
     "entries": [
       {
@@ -27,6 +27,15 @@
     ]
   },
   {
+    "istilah": "Acu Silang",
+    "entries": [
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Perbandingan antara persyaratan sistem manajemen dalam peraturan badan ini dengan isi klausul dalam dokumen sistem manajemen yang mengacu pada standar nasional atau internasional."
+      }
+    ]
+  },
+  {
     "istilah": "Administrator Kawasan Ekonomi Khusus",
     "entries": [
       {
@@ -38,7 +47,7 @@
         "definisi": "Administrator kek sebagaimana diatur dalam peraturan perundang-undangan di bidang kawasan ekonomi khusus."
       }
     ]
-  },  
+  },
   {
     "istilah": "Ahli Radiografi",
     "entries": [
@@ -518,6 +527,15 @@
     ]
   },
   {
+    "istilah": "Badan Pengawas Tenaga Nuklir",
+    "entries": [
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Lembaga pemerintah nonkementerian yang melaksanakan tugas pemerintahan di bidang pengawasan tenaga nuklir."
+      }
+    ]
+  },
+  {
     "istilah": "Badan Pengawas Tenaga Nuklir atau Bapeten",
     "entries": [
       {
@@ -873,7 +891,6 @@
         "sumber": "PP 5 Tahun 2021 - Penyelenggaraan Perizinan Berusaha Berbasis Risiko.pdf",
         "definisi": "Badan pengusahaan kpbpb sebagaimana diatur dalam peraturan perundang- undangan di bidang kawasan perdagangan bebas dan pelabuhan bebas."
       }
-      
     ]
   },
   {
@@ -2214,6 +2231,10 @@
       {
         "sumber": "Perba 4 Tahun 2010 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan.pdf",
         "definisi": "Setiap informasi tertulis dan/atau dalam bentuk gambar yang menerangkan, mendefinisikan, menetapkan, dan menyatakan suatu kegiatan."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Setiap informasi tertulis dan/atau dalam bentuk gambar yang menerangkan, mendefinisikan, menetapkan, dan menyatakan suatu kegiatan."
       }
     ]
   },
@@ -2231,6 +2252,10 @@
     "entries": [
       {
         "sumber": "Perba 1 Tahun 2026 - Sistem Proteksi Fisik Instalasi Nuklir dan Bahan Nuklir.pdf",
+        "definisi": "Dokumen dan rekaman yang dipersyaratkan dalam sistem manajemen untuk dikendalikan dan dipelihara oleh organisasi."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
         "definisi": "Dokumen dan rekaman yang dipersyaratkan dalam sistem manajemen untuk dikendalikan dan dipelihara oleh organisasi."
       }
     ]
@@ -2940,15 +2965,6 @@
     ]
   },
   {
-    "istilah": "Hp(d) atau Dosis Ekivalen Perorangan",
-    "entries": [
-      {
-        "sumber": "Perba 11 Tahun 2015 - Laboratorium Dosimetri Eksterna.pdf",
-        "definisi": "Dosis ekivalen p pada jaringan tubuh di kedalaman d mm pada bagian tertentu tubuh manusia."
-      }
-    ]
-  },
-  {
     "istilah": "Hak Akses",
     "entries": [
       {
@@ -3044,6 +3060,15 @@
       {
         "sumber": "Perba 6 Tahun 2020 - Keselamatan Radiasi Produksi Radioisotop dan Radiofarmaka.pdf",
         "definisi": "Laboratorium yang didesain untuk menangani zat radioaktif, yang berisi satu atau lebih hot cell."
+      }
+    ]
+  },
+  {
+    "istilah": "Hp(d) atau Dosis Ekivalen Perorangan",
+    "entries": [
+      {
+        "sumber": "Perba 11 Tahun 2015 - Laboratorium Dosimetri Eksterna.pdf",
+        "definisi": "Dosis ekivalen p pada jaringan tubuh di kedalaman d mm pada bagian tertentu tubuh manusia."
       }
     ]
   },
@@ -3303,7 +3328,7 @@
         "sumber": "Perba 10 Tahun 2008 - Izin Bekerja Petugas Instalasi dan Bahan Nuklir.pdf",
         "definisi": ":a. reaktor nuklir; b. fasilitas yang digunakan untuk pemurnian, konversi, pengayaan bahan nuklir, fabrikasi bahan bakar nuklir dan/atau pengolahan ulang bahan bakar nuklir bekas; dan/atau c. fasilitas yang digunakan untuk menyimpan bahan bakar nuklir dan bahan bakar nuklir bekas."
       },
-            {
+      {
         "sumber": "Perba 1 Tahun 2010 - Kesiapsiagaan dan Penanggulangan Kedaruratan Nuklir.pdf",
         "definisi": ":a. reaktor nuklir; b. fasilitas yang digunakan untuk pemurnian, konversi, pengayaan bahan nuklir, fabrikasi bahan bakar nuklir dan/atau pengolahan ulang bahan bakar nuklir bekas; dan/atau c. fasilitas yang digunakan untuk menyimpan bahan bakar nuklir dan bahan bakar nuklir bekas."
       },
@@ -3663,8 +3688,6 @@
         "sumber": "Perba 5 Tahun 2025 - Standar Kegiatan Usaha danatau Standar Produk Jasa pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran.pdf",
         "definisi": "Persetujuan pemerintah pusat atau pemerintah daerah untuk pelaksanaan kegiatan usaha yang wajib dipenuhi oleh pelaku usaha sebelum melaksanakan kegiatan usahanya."
       }
-      
-  
     ]
   },
   {
@@ -5965,6 +5988,15 @@
     ]
   },
   {
+    "istilah": "Manajer",
+    "entries": [
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Orang perseorangan menjadi bagian dari organisasi pemegang izin yang berwenang dan bertanggung jawab membuat rencana, mengatur, memimpin, dan mengendalikan pelaksanaan sistem manajemen untuk mencapai keselamatan."
+      }
+    ]
+  },
+  {
     "istilah": "Manajer Reaktor",
     "entries": [
       {
@@ -6210,19 +6242,24 @@
     ]
   },
   {
-    "istilah": "Nilai Aktivitas A",
+    "istilah": "Nilai Aktivitas A1",
+    "entries": [
+      {
+        "sumber": "Perba 7 Tahun 2020 - Keselamatan Pengangkutan Zat Radioaktif.pdf",
+        "definisi": "Nilai aktivitas zat radioaktif bentuk khusus yang digunakan untuk menentukan batas aktivitas."
+      }
+    ]
+  },
+  {
+    "istilah": "Nilai Aktivitas A2",
     "entries": [
       {
         "sumber": "Perba 4 Tahun 2022 - Laboratorium Uji Bungkusan Zat Radioaktif.pdf",
-        "definisi": "2 2 nilai aktivitas zat radioaktif, selain zat radioaktif bentuk khusus, yang digunakan untuk menentukan batas aktivitas sesuai dengan ketentuan peraturan perundang- undangan di bidang keselamatan radiasi dan keamanan dalam pengangkutan zat radioaktif."
+        "definisi": "Nilai aktivitas zat radioaktif, selain zat radioaktif bentuk khusus, yang digunakan untuk menentukan batas aktivitas sesuai dengan ketentuan peraturan perundang- undangan di bidang keselamatan radiasi dan keamanan dalam pengangkutan zat radioaktif."
       },
       {
         "sumber": "Perba 7 Tahun 2020 - Keselamatan Pengangkutan Zat Radioaktif.pdf",
-        "definisi": "Nilai aktivitas zat radioaktif 1 bentuk khusus yang digunakan untuk menentukan batas aktivitas."
-      },
-      {
-        "sumber": "Perba 7 Tahun 2020 - Keselamatan Pengangkutan Zat Radioaktif.pdf",
-        "definisi": "Nilai aktivitas zat radioaktif, 2 selain zat radioaktif bentuk khusus, yang digunakan untuk menentukan batas aktivitas."
+        "definisi": "Nilai aktivitas zat radioaktif, selain zat radioaktif bentuk khusus, yang digunakan untuk menentukan batas aktivitas."
       }
     ]
   },
@@ -7274,6 +7311,10 @@
       {
         "sumber": "Perba 5 Tahun 2022 - Manajemen Penuaan Reaktor Nuklir.pdf",
         "definisi": "Organisasi yang menyediakan produk atau jasa yang berkaitan dengan keselamatan."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Organisasi yang menyediakan produk atau jasa yang berkaitan dengan keselamatan."
       }
     ]
   },
@@ -7652,6 +7693,10 @@
       {
         "sumber": "Perba 9 Tahun 2015 - Ketentuan Perawatan Instalasi Nuklir Non Reaktor.pdf",
         "definisi": "Badan Tenaga Nuklir Nasional, badan usaha milik negara, koperasi, atau badan usaha yang berbentuk badan hukum yang telah memiliki izin Pembangunan, izin Pengoperasian, izin Dekomisioning Instalasi Nuklir, dan/atau izin pemanfaatan Bahan Nuklir dari Badan Pengawas Tenaga Nuklir."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Badan usaha yang memiliki perizinan berusaha sektor ketenaganukliran atau badan hukum publik yang memiliki izin dari badan pengawas tenaga nuklir."
       }
     ]
   },
@@ -8798,11 +8843,29 @@
     ]
   },
   {
+    "istilah": "Penilaian Diri",
+    "entries": [
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Proses rutin dan berkelanjutan yang dilakukan oleh manajemen organisasi untuk mengevaluasi efektivitas di semua bidang yang menjadi tanggung jawabnya."
+      }
+    ]
+  },
+  {
     "istilah": "Penilaian Kesesuaian",
     "entries": [
       {
         "sumber": "Perba 1 Tahun 2025 - Penilaian Kesesuaian Pesawat Sinar X Radiologi Diagnostik dan Intervensional.pdf",
         "definisi": "Kegiatan untuk menilai bahwa barang, jasa, sistem, proses, atau personel telah memenuhi persyaratan acuan."
+      }
+    ]
+  },
+  {
+    "istilah": "Penilaian Mandiri",
+    "entries": [
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Penilaian yang dilakukan oleh atau atas nama manajemen organisasi, pihak berkepentingan atau organisasi eksternal independen dalam rangka evaluasi efektivitas dan pemenuhan peraturan perundang-undangan dan persyaratan sistem manajemen, serta kesesuaian pelaksanaan pekerjaan dan mutu keluaran organisasi."
       }
     ]
   },
@@ -9157,7 +9220,6 @@
         "sumber": "PP 5 Tahun 2021 - Penyelenggaraan Perizinan Berusaha Berbasis Risiko.pdf",
         "definisi": "Legalitas yang diberikan kepada pelaku usaha untuk memulai dan menjalankan usaha dan/atau kegiatannya."
       }
-      
     ]
   },
   {
@@ -9165,7 +9227,7 @@
     "entries": [
       {
         "sumber": "PP Nomor 28 Tahun 2025 - Penyelenggaraan Perizinan Berusaha Berbasis Risiko.pdf",
-        "definisi": " perizinan berusaha yang menggunakan pendekatan berbasis risiko yang diperoleh dari hasil analisis risiko setiap kegiatan usaha."
+        "definisi": "perizinan berusaha yang menggunakan pendekatan berbasis risiko yang diperoleh dari hasil analisis risiko setiap kegiatan usaha."
       },
       {
         "sumber": "PP 5 Tahun 2021 - Penyelenggaraan Perizinan Berusaha Berbasis Risiko.pdf",
@@ -9489,7 +9551,7 @@
         "sumber": "Perba 4 Tahun 2020 - Keselamatan Radiasi pada Penggunaaan Pesawat Sinar - X dalam Radiologi Diagnostik dan Intervensional.pdf",
         "definisi": "pesawat sinar-X yang didesain untuk memperoleh gambaran visualisasi 3 (tiga) dimensi untuk pencitraan gigi dan rahang."
       }
-    ]   
+    ]
   },
   {
     "istilah": "Pesawat Sinar-X Gigi Intraoral",
@@ -10076,6 +10138,10 @@
       {
         "sumber": "Perba 4 Tahun 2010 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan.pdf",
         "definisi": "Seseorang atau sekelompok orang yang memiliki kepentingan dalam kinerja suatu organisasi."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Seseorang atau sekelompok orang yang memiliki kepentingan dalam kinerja suatu organisasi."
       }
     ]
   },
@@ -10111,20 +10177,20 @@
     ]
   },
   {
-    "istilah": "Produk",
-    "entries": [
-      {
-        "sumber": "Perba 4 Tahun 2010 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan.pdf",
-        "definisi": "Hasil suatu proses."
-      }
-    ]
-  },
-  {
     "istilah": "Prinsip ALARA (As Low as Reasonably Achievable)",
     "entries": [
       {
         "sumber": "Perba 4 Tahun 2009 - Dekomisioning Reaktor Nuklir.pdf",
         "definisi": "prinsip untuk mempertahankan paparan radiasi serendah mungkin yang dapat dicapai di bawah batas dosis, konsisten dengan tujuan dilaksanakannya kegiatan yang telah diberi izin, dengan mempertimbangkan perkembangan teknologi, dan aspek sosio-ekonomi dalam kaitannya dengan pemanfaatan tenaga nuklir."
+      }
+    ]
+  },
+  {
+    "istilah": "Produk",
+    "entries": [
+      {
+        "sumber": "Perba 4 Tahun 2010 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan.pdf",
+        "definisi": "Hasil suatu proses."
       }
     ]
   },
@@ -10235,6 +10301,10 @@
     "entries": [
       {
         "sumber": "Perba 4 Tahun 2010 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan.pdf",
+        "definisi": "Serangkaian kegiatan yang saling berinteraksi untuk mengubah masukan menjadi keluaran."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
         "definisi": "Serangkaian kegiatan yang saling berinteraksi untuk mengubah masukan menjadi keluaran."
       }
     ]
@@ -10918,6 +10988,10 @@
       {
         "sumber": "Perba 8 Tahun 2016 - Pengolahan Limbah Radioaktif Tingkat Rendah dan Sedang.pdf",
         "definisi": "Dokumen yang menyatakan hasil yang dicapai atau memberi bukti pelaksanaan kegiatan dalam pemanfaatan tenaga nuklir."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Bukti objektif kegiatan yang telah dilakukan atau hasil yang dicapai."
       }
     ]
   },
@@ -11564,6 +11638,10 @@
       {
         "sumber": "Perba 9 Tahun 2015 - Ketentuan Perawatan Instalasi Nuklir Non Reaktor.pdf",
         "definisi": "Sekumpulan unsur yang saling terkait atau berinteraksi untuk menetapkan kebijakan dan sasaran, serta memungkinkan sasaran tersebut tercapai secara efektif dan efisien, dengan memadukan semua unsur organisasi yang meliputi struktur, sumber daya, dan proses, untuk mencapai semua sasaran organisasi."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
+        "definisi": "Sekumpulan unsur yang saling terkait atau berinteraksi untuk menetapkan kebijakan dan sasaran, serta memungkinkan sasaran tersebut tercapai secara efisien dan efektif, dengan memadukan semua unsur organisasi yang meliputi struktur, sumber daya, dan proses."
       }
     ]
   },
@@ -11659,7 +11737,46 @@
       }
     ]
   },
-    {
+  {
+    "istilah": "SSK Kritis",
+    "entries": [
+      {
+        "sumber": "Perba 5 Tahun 2022 - Manajemen Penuaan Reaktor Nuklir.pdf",
+        "definisi": "Ssk yang rentan terhadap penuaan, tidak mudah diganti dan diperbaiki."
+      },
+      {
+        "sumber": "Perba 7 Tahun 2012 - Manajemen Penuaan Instalasi Nuklir Non Reaktor.pdf",
+        "definisi": "Ssk yang penting untuk keselamatan dan rentan terhadap penuaan."
+      },
+      {
+        "sumber": "Perba 8 Tahun 2008 - Ketentuan Keselamatan Manajemen Penuaan Reaktor Nuklir.pdf",
+        "definisi": "Ssk yang penting bagi keselamatan dan rentan terhadap penuaan."
+      },
+      {
+        "sumber": "Perba 9 Tahun 2015 - Ketentuan Perawatan Instalasi Nuklir Non Reaktor.pdf",
+        "definisi": "SSK yang penting untuk keselamatan dan rentan terhadap penuaan."
+      }
+    ]
+  },
+  {
+    "istilah": "SSK yang Penting Untuk Keselamatan",
+    "entries": [
+      {
+        "sumber": "Perba 7 Tahun 2011 - Desain Sistem Catu Daya Darurat Reaktor Daya.pdf",
+        "definisi": "Ssk yang menjadi bagian dari suatu sistem keselamatan atau ssk yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
+      }
+    ]
+  },
+  {
+    "istilah": "SSK yang Terkait Keselamatan",
+    "entries": [
+      {
+        "sumber": "Perba 7 Tahun 2011 - Desain Sistem Catu Daya Darurat Reaktor Daya.pdf",
+        "definisi": "Ssk yang penting untuk keselamatan tetapi bukan bagian dari sistem keselamatan."
+      }
+    ]
+  },
+  {
     "istilah": "Standar",
     "entries": [
       {
@@ -11757,27 +11874,6 @@
     ]
   },
   {
-    "istilah": "SSK Kritis",
-    "entries": [
-      {
-        "sumber": "Perba 5 Tahun 2022 - Manajemen Penuaan Reaktor Nuklir.pdf",
-        "definisi": "Ssk yang rentan terhadap penuaan, tidak mudah diganti dan diperbaiki."
-      },
-      {
-        "sumber": "Perba 7 Tahun 2012 - Manajemen Penuaan Instalasi Nuklir Non Reaktor.pdf",
-        "definisi": "Ssk yang penting untuk keselamatan dan rentan terhadap penuaan."
-      },
-      {
-        "sumber": "Perba 8 Tahun 2008 - Ketentuan Keselamatan Manajemen Penuaan Reaktor Nuklir.pdf",
-        "definisi": "Ssk yang penting bagi keselamatan dan rentan terhadap penuaan."
-      },
-      {
-        "sumber": "Perba 9 Tahun 2015 - Ketentuan Perawatan Instalasi Nuklir Non Reaktor.pdf",
-        "definisi": "SSK yang penting untuk keselamatan dan rentan terhadap penuaan."
-      }
-    ]
-  },
- {
     "istilah": "Struktur, Sistem, dan Komponen",
     "entries": [
       {
@@ -11795,61 +11891,11 @@
     ]
   },
   {
-    "istilah": "SSK yang Terkait Keselamatan",
+    "istilah": "Struktur, Sistem, Dan Komponen Yang Penting Untuk Keselamatan",
     "entries": [
       {
-        "sumber": "Perba 7 Tahun 2011 - Desain Sistem Catu Daya Darurat Reaktor Daya.pdf",
-        "definisi": "Ssk yang penting untuk keselamatan tetapi bukan bagian dari sistem keselamatan."
-      }
-    ]
-  },
-  {
-    "istilah": "SSK yang Penting Untuk Keselamatan",
-    "entries": [
-      {
-        "sumber": "Perba 7 Tahun 2011 - Desain Sistem Catu Daya Darurat Reaktor Daya.pdf",
-        "definisi": "Ssk yang menjadi bagian dari suatu sistem keselamatan atau ssk yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
-      }
-    ]
-  },
-  {
-    "istilah": "Struktur, Sistem, dan Komponen yang Penting untuk Keselamatan",
-    "entries": [
-      {
-        "sumber": "Perba 12 Tahun 2020 - Klasifikasi Struktur, Sistem, dan Komponen Instalasi Nuklir.pdf",
-        "definisi": "Bagian  dari suatu sistem keselamatan instalasi nuklir yang apabla gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat.       "
-      },
-      {
-        "sumber": "Perba 5 Tahun 2012 - Keselamatan dalam Utilisasi dan Modifikasi Reaktor Non Daya.pdf",
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
         "definisi": "Struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
-      },
-      {
-        "sumber": "Perba 5 Tahun 2022 - Manajemen Penuaan Reaktor Nuklir.pdf",
-        "definisi": "Struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
-      },
-      {
-        "sumber": "Perba 7 Tahun 2012 - Manajemen Penuaan Instalasi Nuklir Non Reaktor.pdf",
-        "definisi": "Struktur, sistem dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
-      },
-      {
-        "sumber": "Perba 6 Tahun 2012 - Desain Sistem Keselamatan Berbasis Komputer Reaktor Daya.pdf",
-        "definisi": "Struktur, sistem dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
-      },
-      {
-        "sumber": "Perba 8 Tahun 2019 - Keselamatan Operasi Reaktor Daya.pdf",
-        "definisi": "Struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
-      },
-      {
-        "sumber": "Perba 9 Tahun 2015 - Ketentuan Perawatan Instalasi Nuklir Non Reaktor.pdf",
-        "definisi": "struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja atau anggota masyarakat."
-      },
-      {
-        "sumber": "Perba 2 Tahun 2015 - Verifikasi dan Penilaian Keselamatan Reaktor Daya.pdf",
-        "definisi": "struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja atau anggota masyarakat."
-      },
-      {
-        "sumber": "Perba 5 Tahun 2011 - Ketentuan Perawatan Reaktor Non Daya.pdf",
-        "definisi": "Struktur, sistem dan komponen yang menjadi bagian dari sistem keselamatan dan struktur, sistem dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja atau anggota masyarakat."
       }
     ]
   },
@@ -12667,6 +12713,10 @@
     "entries": [
       {
         "sumber": "Perba 4 Tahun 2010 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan.pdf",
+        "definisi": "Evaluasi yang sistematis dan teratur yang dilakukan terhadap kesesuaian, kecukupan, efektivitas, dan efisiensi sistem manajemen dalam melaksanakan kebijakan, dan mencapai tujuan dan sasaran."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
         "definisi": "Evaluasi yang sistematis dan teratur yang dilakukan terhadap kesesuaian, kecukupan, efektivitas, dan efisiensi sistem manajemen dalam melaksanakan kebijakan, dan mencapai tujuan dan sasaran."
       }
     ]
