@@ -79,6 +79,10 @@
       {
         "sumber": "Perba 7 Tahun 2019 - Izin Bekerja Petugas Instalasi Nuklir dan Bahan Nuklir.pdf",
         "definisi": "Proses pemberian pengakuan formal yang menyatakan bahwa suatu lembaga telah memenuhi persyaratan untuk melakukan kegiatan pelatihan."
+      },
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Rangkaian kegiatan pengakuan formal oleh lembaga akreditasi yang menyatakan bahwa suatu unit atau institusi telah memenuhi persyaratan untuk melakukan kegiatan standardisasi tertentu."
       }
     ]
   },
@@ -88,6 +92,15 @@
       {
         "sumber": "Perba 6 Tahun 2020 - Keselamatan Radiasi Produksi Radioisotop dan Radiofarmaka.pdf",
         "definisi": "Peralatan yang dapat digunakan untuk mengiradiasi sasaran guna memperoleh radioisotop melalui percepatan partikel bermuatan."
+      }
+    ]
+  },
+  {
+    "istilah": "Aktivitas",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Bagian dari sejumlah nuklida radioaktif yang mengalami transformasi spontan selama interval waktu tertentu dibagi interval waktu tertentu."
       }
     ]
   },
@@ -124,6 +137,15 @@
       {
         "sumber": "Perba 1 Tahun 2009 - Ketentuan Sistem Proteksi Fisik Instalasi dan Bahan Nuklir.pdf",
         "definisi": "Peralatan teknis yang digunakan untuk memberi peringatan adanya penyusupan atau gangguan."
+      }
+    ]
+  },
+  {
+    "istilah": "Alat Ukur Radiasi",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Alat yang menunjukkan nilai paparan, laju paparan, aktivitas, laju cacah, dosis atau laju dosis dalam medan radiasi."
       }
     ]
   },
@@ -350,6 +372,42 @@
     ]
   },
   {
+    "istilah": "Aur Lapangan",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Aur baik yang terpasang tetap maupun portabel yang digunakan dalam pengukuran rutin untuk keselamatan radiasi."
+      }
+    ]
+  },
+  {
+    "istilah": "Aur Standar Primer",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Aur absolut yang mempunyai kualitas metrologi tertinggi yang mampu menentukan besaran yang diukur dari besaran fisis dasar dan keakuratannya telah dibuktikan dengan uji banding terhadap standar sejenis dari institusi yang berpartisipasi dalam sistem pengukuran internasional."
+      }
+    ]
+  },
+  {
+    "istilah": "Aur Standar Sekunder",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Aur yang digunakan sebagai standar dalam ldss dan telah dikalibrasi terhadap standar primer pada laboratorium standar primer atau melalui jaringan kerja ldss iaea/who."
+      }
+    ]
+  },
+  {
+    "istilah": "Aur Standar Tersier",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Aur yang digunakan sebagai standar dalam ldst dan telah dikalibrasi terhadap standar sekunder."
+      }
+    ]
+  },
+  {
     "istilah": "Autentifikasi",
     "entries": [
       {
@@ -470,6 +528,15 @@
     ]
   },
   {
+    "istilah": "Badan Kesehatan Dunia",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Lembaga yang berada di bawah dan bertanggung jawab kepada perserikatan bangsa-bangsa yang bertugas mengurusi masalah kesehatan."
+      }
+    ]
+  },
+  {
     "istilah": "Badan Nasional Penanggulangan Bencana",
     "entries": [
       {
@@ -532,6 +599,14 @@
       {
         "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
         "definisi": "Lembaga pemerintah nonkementerian yang melaksanakan tugas pemerintahan di bidang pengawasan tenaga nuklir."
+      },
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Lembaga pemerintah non-departemen yang berada di bawah dan bertanggung jawab langsung kepada presiden yang bertugas melaksanakan pengawasan terhadap segala kegiatan pemanfaatan tenaga nuklir."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Instansi yang bertugas melaksanakan pengawasan melalui peraturan, perizinan, dan inspeksi terhadap segala kegiatan pemanfaatan tenaga nuklir."
       }
     ]
   },
@@ -903,6 +978,24 @@
     ]
   },
   {
+    "istilah": "Badan Tenaga Atom Internasional",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Lembaga yang berada di bawah dan bertanggung jawab kepada perserikatan bangsa-bangsa yang bertugas mengurusi masalah ketenaganukliran."
+      }
+    ]
+  },
+  {
+    "istilah": "Badan Tenaga Atom Internasional (International Atomic Energy Agency)",
+    "entries": [
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Badan internasional yang menangani ketenaganukliran."
+      }
+    ]
+  },
+  {
     "istilah": "Badan Tenaga Nuklir Nasional",
     "entries": [
       {
@@ -916,6 +1009,10 @@
       {
         "sumber": "Perba 8 Tahun 2016 - Pengolahan Limbah Radioaktif Tingkat Rendah dan Sedang.pdf",
         "definisi": "Badan pelaksana sebagaimana dimaksud dalam undang-undang nomor 10 tahun 1997 tentang ketenaganukliran."
+      },
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Lembaga pemerintah non-departemen yang berada di bawah dan bertanggung jawab langsung kepada presiden yang bertugas melaksanakan pemanfaatan tenaga nuklir."
       }
     ]
   },
@@ -1457,6 +1554,42 @@
     ]
   },
   {
+    "istilah": "Brakhiterapi",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Jenis radioterapi jarak dekat yang diberikan secara manual atau remote afterloading."
+      }
+    ]
+  },
+  {
+    "istilah": "Brakhiterapi Manual",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Jenis brakhiterapi dengan zat radioaktif yang dimasukkan secara manual ke dalam atau menempel pada tumor."
+      }
+    ]
+  },
+  {
+    "istilah": "Brakhiterapi Manual Implan Permanen",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Jenis brakhiterapi manual laju dosis rendah yang dipasang secara permanen pada tumor."
+      }
+    ]
+  },
+  {
+    "istilah": "Brakhiterapi Remote Afterloading",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Jenis brakhiterapi yang menggunakan perangkat kendali jarak jauh yang dikendalikan komputer untuk memasukkan zat radioaktif terbungkus ke dalam aplikator yang telah dipasang dalam tubuh pasien."
+      }
+    ]
+  },
+  {
     "istilah": "Budaya Keamanan Nuklir",
     "entries": [
       {
@@ -1563,6 +1696,15 @@
     ]
   },
   {
+    "istilah": "Cacah",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Jumlah pulsa yang tercatat dalam jangka waktu tertentu."
+      }
+    ]
+  },
+  {
     "istilah": "Catu Daya Darurat",
     "entries": [
       {
@@ -1639,6 +1781,15 @@
     ]
   },
   {
+    "istilah": "Cyberknife",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Pesawat linac yang menggunakan teknologi robot untuk pengobatan kanker dengan metode radiasi stereotaktik."
+      }
+    ]
+  },
+  {
     "istilah": "Daerah Akses Terbatas",
     "entries": [
       {
@@ -1674,6 +1825,10 @@
       {
         "sumber": "Perba 2 Tahun 2009 - Penyusunan Daftar Informasi Desain.pdf",
         "definisi": "Daerah di dalam atau di luar fasilitas sedemikian sehingga dapat ditentukan: a. jumlah setiap bahan nuklir yang masuk atau keluar pada setiap mba; dan b. inventori fisik bahan nuklir pada setiap mba sesuai dengan prosedur."
+      },
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Daerah yang di dalamnya dapat ditentukan jumlah setiap bahan nuklir yang masuk, keluar dan inventori fisiknya."
       }
     ]
   },
@@ -1712,6 +1867,10 @@
       {
         "sumber": "Perba 6 Tahun 2020 - Keselamatan Radiasi Produksi Radioisotop dan Radiofarmaka.pdf",
         "definisi": "Daerah kerja yang memerlukan tindakan proteksi dan ketentuan keselamatan khusus untuk mengendalikan paparan normal atau mencegah penyebaran kontaminasi selama kondisi kerja normal dan untuk mencegah atau membatasi tingkat paparan potensial."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Suatu daerah kerja yang memerlukan tindakan proteksi dan ketentuan keselamatan khusus untuk mengendalikan paparan normal atau mencegah penyebaran kontaminasi selama kondisi kerja normal dan untuk mencegah atau membatasi tingkat paparan potensial."
       }
     ]
   },
@@ -1746,6 +1905,10 @@
       {
         "sumber": "Perba 6 Tahun 2020 - Keselamatan Radiasi Produksi Radioisotop dan Radiofarmaka.pdf",
         "definisi": "Daerah kerja di luar daerah pengendalian yang memerlukan peninjauan terhadap paparan kerja dan tidak memerlukan tindakan proteksi atau ketentuan keselamatan khusus."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Daerah kerja di luar daerah pengendalian yang memerlukan peninjauan terhadap paparan kerja dan tidak memerlukan tindakan … tindakan proteksi atau ketentuan keselamatan khusus."
       }
     ]
   },
@@ -2208,6 +2371,15 @@
     ]
   },
   {
+    "istilah": "Dokter Spesialis Onkologi Radiasi",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Dokter spesialis yang memiliki kompetensi dalam bidang onkologi radiasi."
+      }
+    ]
+  },
+  {
     "istilah": "Dokter Spesialis Radiologi",
     "entries": [
       {
@@ -2275,6 +2447,24 @@
       {
         "sumber": "PP 45 Tahun 2023 - Keselamatan Radiasi Pengion dan Keamanan Zat Radioaktif.pdf",
         "definisi": "Pengukuran, perhitungan, dan pengkajian dosis radiasi pengion dalam bentuk energi yang diserap oleh suatu materi."
+      }
+    ]
+  },
+  {
+    "istilah": "Dosimetris",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Fisikawan medis atau radioterapis yang memiliki kompetensi dalam bidang dosimetri klinis."
+      }
+    ]
+  },
+  {
+    "istilah": "Dosis",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Jumlah radiasi yang terdapat dalam medan radiasi atau jumlah energi radiasi yang diserap atau diterima oleh materi."
       }
     ]
   },
@@ -2741,6 +2931,15 @@
       {
         "sumber": "Perba 7 Tahun 2011 - Desain Sistem Catu Daya Darurat Reaktor Daya.pdf",
         "definisi": "Fungsi spesifik yang harus dilaksanakan untuk memenuhi tujuan keselamatan."
+      }
+    ]
+  },
+  {
+    "istilah": "Gamma Knife",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Pesawat terapi eksternal yang menggunakan sinar gamma untuk pengobatan kanker dengan metode radiasi stereotaktik."
       }
     ]
   },
@@ -3567,6 +3766,15 @@
     ]
   },
   {
+    "istilah": "Inventori Bahan Nuklir",
+    "entries": [
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Jumlah bahan nuklir yang tersedia di mba atau lof."
+      }
+    ]
+  },
+  {
     "istilah": "Inventori Buku",
     "entries": [
       {
@@ -3814,6 +4022,15 @@
     ]
   },
   {
+    "istilah": "Jumlah Bahan Nuklir Yang Tidak Dapat Dipertanggungjawabkan (Material Unaccounted For)",
+    "entries": [
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Selisih antara inventori bahan nuklir pada buku besar (general ledger) dan hasil pelaksanaan inventori fisik."
+      }
+    ]
+  },
+  {
     "istilah": "Justifikasi",
     "entries": [
       {
@@ -3859,6 +4076,24 @@
       {
         "sumber": "Perba 9 Tahun 2015 - Ketentuan Perawatan Instalasi Nuklir Non Reaktor.pdf",
         "definisi": "Pengukuran atau penyetelan instrumen atau sistem atau kanal sehingga luarannya sesuai dengan nilai standar dengan toleransi dan akurasi yang dapat diterima."
+      }
+    ]
+  },
+  {
+    "istilah": "Kalibrasi Aur",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Tindakan membandingkan bacaan alat tersebut terhadap bacaan aur standar atau tindakan menyinari alat tersebut dalam medan radiasi yang telah diketahui karakteristiknya melalui sumber standar atau aur standar pada kondisi acuan."
+      }
+    ]
+  },
+  {
+    "istilah": "Kalibrasi Keluaran Sumber Radiasi Terapi",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Tindakan menentukan keluaran sumber radiasi terapi dengan menggunakan aur standar pada kondisi acuan."
       }
     ]
   },
@@ -5198,6 +5433,15 @@
     ]
   },
   {
+    "istilah": "Kondisi Acuan",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Kondisi yang disyaratkan sesuai dengan alat ukur atau sumber radiasi yang dikalibrasi."
+      }
+    ]
+  },
+  {
     "istilah": "Kondisi Batas Untuk Operasi Normal",
     "entries": [
       {
@@ -5466,6 +5710,24 @@
     ]
   },
   {
+    "istilah": "Label Kalibrasi",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Tanda hasil kalibrasi yang dikeluarkan oleh ldsp, ldss atau ldst."
+      }
+    ]
+  },
+  {
+    "istilah": "Label Standardisasi",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Tanda hasil standardisasi atau pengukuran sumber standar yang diterbitkan oleh ldsp, ldss atau ldst."
+      }
+    ]
+  },
+  {
     "istilah": "Laboratorium Dosimetri Eksterna",
     "entries": [
       {
@@ -5475,11 +5737,42 @@
     ]
   },
   {
+    "istilah": "Laboratorium Dosimetri Standar Primer",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Laboratorium dosimetri yang mengembangkan, memelihara, dan meningkatkan standar primer dalam dosimetri radiasi, berpartisipasi dalam uji banding sistem pengukuran internasional yang dikoordinir oleh bureau international des poids et mesures (bipm) dan memberikan pelayanan kalibrasi alat ukur radiasi standar sekunder."
+      }
+    ]
+  },
+  {
     "istilah": "Laboratorium Dosimetri Standar Sekunder",
     "entries": [
       {
         "sumber": "Perba 11 Tahun 2015 - Laboratorium Dosimetri Eksterna.pdf",
         "definisi": "Laboratorium dosimetri yang memiliki, mampu mengoperasikan dan memelihara alat ukur radiasi standar sekunder dan sumber standar."
+      },
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Laboratorium dosimetri yang memiliki, mampu mengoperasikan dan memelihara alat ukur radiasi standar sekunder dan/atau sumber standar."
+      }
+    ]
+  },
+  {
+    "istilah": "Laboratorium Dosimetri Standar Tersier",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Laboratorium dosimetri yang memiliki, mampu mengoperasikan dan memelihara alat ukur radiasi standar tersier dan/atau sumber standar."
+      }
+    ]
+  },
+  {
+    "istilah": "Laboratorium Dosimetri Tingkat Nasional",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Ldss yang ditunjuk oleh bapeten."
       }
     ]
   },
@@ -5511,6 +5804,24 @@
     ]
   },
   {
+    "istilah": "Laju Dosis",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Dosis radiasi per satuan waktu."
+      }
+    ]
+  },
+  {
+    "istilah": "Laju Paparan",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Paparan per satuan waktu."
+      }
+    ]
+  },
+  {
     "istilah": "Lampiran Fasilitas",
     "entries": [
       {
@@ -5524,6 +5835,15 @@
       {
         "sumber": "Perba 3 Tahun 2006 - Perizinan Instalasi Nuklir Non Reaktor.pdf",
         "definisi": "Dokumen yang berisi tentang keterangan instalasi yang teridentifikasi berkaitan dengan pengawasan dan pengendalian bahan nuklir."
+      }
+    ]
+  },
+  {
+    "istilah": "Lampiran Fasilitas (Facility Attachment)",
+    "entries": [
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Dokumen yang diterbitkan iaea dan berisi ringkasan did yang menjadi acuan bagi mba."
       }
     ]
   },
@@ -5843,6 +6163,15 @@
     ]
   },
   {
+    "istilah": "Linear Accelerator",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Pesawat terapi eksternal yang menggunakan tabung lurus tempat partikel bermuatan (elektron) mendapat peningkatan energi akibat osilasi medan elektromagnetik sehingga menghasilkan berkas elektron dan/atau sinar–x energi tinggi."
+      }
+    ]
+  },
+  {
     "istilah": "Listrik Padam Total (Station Blackout)",
     "entries": [
       {
@@ -5857,6 +6186,15 @@
       {
         "sumber": "Perba 1 Tahun 2008 - Evaluasi Tapak Reaktor Daya (Aspek Kegempaan).pdf",
         "definisi": "Lapisan paling atas bumi yang hampir seluruhnya terdiri dari batuan padat."
+      }
+    ]
+  },
+  {
+    "istilah": "Location Outside Facilities",
+    "entries": [
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Setiap instalasi atau lokasi pemanfaatan bahan nuklir yang jumlahnya… jumlahnya sama dengan atau lebih kecil dari 1 (satu) kilogram efektif."
       }
     ]
   },
@@ -6246,7 +6584,7 @@
     "entries": [
       {
         "sumber": "Perba 7 Tahun 2020 - Keselamatan Pengangkutan Zat Radioaktif.pdf",
-        "definisi": "Nilai aktivitas zat radioaktif bentuk khusus yang digunakan untuk menentukan batas aktivitas."
+        "definisi": "Nilai aktivitas zat radioaktif 1 bentuk khusus yang digunakan untuk menentukan batas aktivitas."
       }
     ]
   },
@@ -6778,6 +7116,15 @@
     ]
   },
   {
+    "istilah": "Paparan",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Pasangan ion yang terbentuk dalam satuan volume udara akibat radiasi dan seluruh partikel yang terbentuk oleh radiasi terserap dalam volume udara tersebut."
+      }
+    ]
+  },
+  {
     "istilah": "Paparan Darurat",
     "entries": [
       {
@@ -6823,6 +7170,10 @@
       {
         "sumber": "Perba 8 Tahun 2014 - Perubahan Perba 7 Tahun 2009 - Keselamatan Radiasi dalam Penggunaan Peralatan Radiografi Industri.pdf",
         "definisi": "Paparan yang diakibatkan terjadinya kondisi darurat nuklir atau radiologik."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Paparan yang diakibatkan terjadinya kondisi darurat nuklir dan darurat radiologik."
       }
     ]
   },
@@ -7111,6 +7462,10 @@
       {
         "sumber": "Perba 8 Tahun 2011 - Keselamatan Radiasi dalam Penggunaan Pesawat Sinar-X Radiologi Diagnostik dan Intervensional.pdf",
         "definisi": "Setiap orang yang bekerja di instalasi radiologi diagnostik dan intervensional yang diperkirakan dapat menerima dosis radiasi tahunan melebihi dosis untuk masyarakat umum."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Setiap orang yang bekerja di instalasi radioterapi yang diperkirakan dapat menerima dosis radiasi tahunan melebihi dosis untuk masyarakat umum."
       }
     ]
   },
@@ -7129,6 +7484,10 @@
       {
         "sumber": "Perba 2 Tahun 2005 - Sistem Pertanggungjawaban dan Pengendalian Bahan Nuklir.pdf",
         "definisi": "Proses pencatatan semua inventori fisik di dalam suatu mba."
+      },
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Proses perekaman semua inventori bahan nuklir di dalam mba atau lof."
       }
     ]
   },
@@ -7357,6 +7716,10 @@
       {
         "sumber": "Perba 8 Tahun 2014 - Perubahan Perba 7 Tahun 2009 - Keselamatan Radiasi dalam Penggunaan Peralatan Radiografi Industri.pdf",
         "definisi": "Sumber radiasi dalam bentuk pesawat sinar-x dengan energi di bawah 1 (satu) mev dan pesawat energi tinggi dengan energi sama atau di atas 1 (satu) mev."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Sumber radiasi dalam bentuk pesawat sinar-x dan pemercepat berkas radiasi yang memancarkan gelombang elektromagnetik atau partikel berupa akselerator."
       }
     ]
   },
@@ -9126,6 +9489,10 @@
       {
         "sumber": "Perba 17 Tahun 2012 - Keselamatan Radiasi Kedokteran Nuklir.pdf",
         "definisi": "Tenaga kesehatan yang telah mendapat pelatihan khusus keperawatan dalam pelayanan kedokteran nuklir."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Perawat yang telah mendapat pelatihan khusus dalam pelayanan radioterapi."
       }
     ]
   },
@@ -10709,6 +11076,19 @@
       {
         "sumber": "Kepka 21 Tahun 2002 - Program Jaminan Kualitas Instalasi Radioterapi.pdf",
         "definisi": "Suatu cara untuk menyembuhkan atau mengurangi rasa sakit (kuratif dan paliatif) pada penderita penyakit keganasan (kanker) dengan menggunakan radiasi pengion."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Modalitas pengobatan dengan menggunakan zat radioaktif terbungkus dan/atau pembangkit radiasi pengion."
+      }
+    ]
+  },
+  {
+    "istilah": "Radioterapis",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Tenaga kesehatan keteknisian medis yang memiliki kompetensi dalam operasional peralatan radioterapi."
       }
     ]
   },
@@ -10992,6 +11372,10 @@
       {
         "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
         "definisi": "Bukti objektif kegiatan yang telah dilakukan atau hasil yang dicapai."
+      },
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Bukti obyektif kegiatan yang telah dilakukan atau hasil yang telah dicapai."
       }
     ]
   },
@@ -11391,6 +11775,15 @@
     ]
   },
   {
+    "istilah": "Sertifikat Kalibrasi",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Dokumen yang menyatakan hasil kalibrasi yang diterbitkan oleh ldsp, ldss atau ldst."
+      }
+    ]
+  },
+  {
     "istilah": "Sertifikat Keahlian",
     "entries": [
       {
@@ -11439,6 +11832,15 @@
       {
         "sumber": "Perba 5 Tahun 2025 - Standar Kegiatan Usaha danatau Standar Produk Jasa pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran.pdf",
         "definisi": "Pernyataan dan/atau bukti pemenuhan standar pelaksanaan kegiatan usaha."
+      }
+    ]
+  },
+  {
+    "istilah": "Sertifikat Standardisasi",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Dokumen yang menyatakan hasil standardisasi atau pengukuran sumber standar yang diterbitkan oleh ldsp, ldss atau ldst."
       }
     ]
   },
@@ -11821,6 +12223,15 @@
     ]
   },
   {
+    "istilah": "Standardisasi Radionuklida",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Tindakan menentukan aktivitas radionuklida dengan menggunakan aur standar."
+      }
+    ]
+  },
+  {
     "istilah": "Stasiun Alarm Pusat",
     "entries": [
       {
@@ -11891,11 +12302,47 @@
     ]
   },
   {
-    "istilah": "Struktur, Sistem, Dan Komponen Yang Penting Untuk Keselamatan",
+    "istilah": "Struktur, Sistem, dan Komponen yang Penting untuk Keselamatan",
     "entries": [
       {
         "sumber": "Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf",
         "definisi": "Struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 12 Tahun 2020 - Klasifikasi Struktur, Sistem, dan Komponen Instalasi Nuklir.pdf",
+        "definisi": "Bagian  dari suatu sistem keselamatan instalasi nuklir yang apabla gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 5 Tahun 2012 - Keselamatan dalam Utilisasi dan Modifikasi Reaktor Non Daya.pdf",
+        "definisi": "Struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 5 Tahun 2022 - Manajemen Penuaan Reaktor Nuklir.pdf",
+        "definisi": "Struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 7 Tahun 2012 - Manajemen Penuaan Instalasi Nuklir Non Reaktor.pdf",
+        "definisi": "Struktur, sistem dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 6 Tahun 2012 - Desain Sistem Keselamatan Berbasis Komputer Reaktor Daya.pdf",
+        "definisi": "Struktur, sistem dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 8 Tahun 2019 - Keselamatan Operasi Reaktor Daya.pdf",
+        "definisi": "Struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja tapak atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 9 Tahun 2015 - Ketentuan Perawatan Instalasi Nuklir Non Reaktor.pdf",
+        "definisi": "struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 2 Tahun 2015 - Verifikasi dan Penilaian Keselamatan Reaktor Daya.pdf",
+        "definisi": "struktur, sistem, dan komponen yang menjadi bagian dari suatu sistem keselamatan dan/atau struktur, sistem, dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja atau anggota masyarakat."
+      },
+      {
+        "sumber": "Perba 5 Tahun 2011 - Ketentuan Perawatan Reaktor Non Daya.pdf",
+        "definisi": "Struktur, sistem dan komponen yang menjadi bagian dari sistem keselamatan dan struktur, sistem dan komponen yang apabila gagal atau terjadi malfungsi menyebabkan terjadinya paparan radiasi terhadap pekerja atau anggota masyarakat."
       }
     ]
   },
@@ -12034,6 +12481,15 @@
       {
         "sumber": "Perba 7 Tahun 2007 - Keamanan Sumber Radioaktif.pdf",
         "definisi": "Zat radioaktif berbentuk padat yang terbungkus secara permanen dalam kapsul yang terikat kuat."
+      }
+    ]
+  },
+  {
+    "istilah": "Sumber Standar",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Sumber radioaktif terbuka dan terbungkus yang digunakan untuk kalibrasi aur atau detektor."
       }
     ]
   },
@@ -12380,6 +12836,15 @@
     ]
   },
   {
+    "istilah": "Teknisi Elektromedis",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Tenaga keteknisian non medis yang memiliki kompetensi dalam bidang pemeliharaan dan perbaikan peralatan radioterapi."
+      }
+    ]
+  },
+  {
     "istilah": "Teknisi Perawatan Reaktor Daya",
     "entries": [
       {
@@ -12394,6 +12859,15 @@
       {
         "sumber": "Perba 10 Tahun 2008 - Izin Bekerja Petugas Instalasi dan Bahan Nuklir.pdf",
         "definisi": "Petugas yang bertugas merawat dan memperbaiki ssk dalam reaktor nondaya agar selalu dalam kondisi operasi yang baik."
+      }
+    ]
+  },
+  {
+    "istilah": "Teknisi Ruang Cetak (Mould Room Technician)",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Tenaga yang telah mendapat pelatihan khusus dalam fungsi ruang cetak (mould room) dalam radioterapi di bawah supervisi radioterapis."
       }
     ]
   },
@@ -12429,6 +12903,24 @@
     ]
   },
   {
+    "istilah": "Tempat Pengukuran Pokok Alir (Flow Key Measurement Point)",
+    "entries": [
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Kode untuk menentukan aliran bahan nuklir dalam mba, yang meliputi paling sedikit penerimaan dan pengiriman bahan nuklir."
+      }
+    ]
+  },
+  {
+    "istilah": "Tempat Pengukuran Pokok Inventori (Inventory Key Measurement Point)",
+    "entries": [
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Tempat untuk pemanfaatan bahan nuklir dalam mba."
+      }
+    ]
+  },
+  {
     "istilah": "Tenaga Ahli",
     "entries": [
       {
@@ -12455,6 +12947,10 @@
       {
         "sumber": "Perba 8 Tahun 2011 - Keselamatan Radiasi dalam Penggunaan Pesawat Sinar-X Radiologi Diagnostik dan Intervensional.pdf",
         "definisi": "Tenaga kesehatan yang memiliki kompetensi dalam bidang fisika medik klinik lanjut, telah mengikuti clinical residence, dan telah bekerja di instalasi radiologi paling kurang 7 (tujuh) tahun."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Tenaga kesehatan yang memiliki kompetensi dalam bidang fisika medik klinik lanjut, telah mengikuti clinical residence di rumah sakit yang memiliki fasilitas radioterapi, dan telah bekerja di instalasi radioterapi paling kurang 5 (lima) tahun."
       }
     ]
   },
@@ -12497,6 +12993,15 @@
       {
         "sumber": "Perka 5 Tahun 2015 - Evaluasi Tapak Instalasi Nuklir untuk Aspek Kegunungapian.pdf",
         "definisi": "Bahan piroklastik yang dilontarkan selama erupsi gunung api."
+      }
+    ]
+  },
+  {
+    "istilah": "Terapi Eksternal",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Jenis radioterapi dengan peralatan pemancar berkas radiasi berada pada jarak tertentu di luar tubuh manusia."
       }
     ]
   },
@@ -12749,6 +13254,15 @@
     ]
   },
   {
+    "istilah": "Treatment Planning System",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Suatu sistem komputer khusus yang digunakan untuk membuat rencana pengobatan dengan radiasi dengan membuat kurva distribusi dosis pada terapi eksternal dan brakhiterapi sehingga dapat diketahui dosis pada volume tumor total (gross tumour volume), volume target klinis (clinical target volume), volume target pada perencanaan (planning target volume), dan dosis pada organ kritis sekitar tumor yang dapat dilihat pada histogram volume dosis (dose volume hystogram)."
+      }
+    ]
+  },
+  {
     "istilah": "Triage",
     "entries": [
       {
@@ -12798,6 +13312,15 @@
     ]
   },
   {
+    "istilah": "Uji Banding Antar Laboratorium",
+    "entries": [
+      {
+        "sumber": "Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf",
+        "definisi": "Pengorganisasian dan evaluasi terhadap bahan uji atau dosis radiasi yang ditentukan sebelumnya antara dua atau lebih laboratorium."
+      }
+    ]
+  },
+  {
     "istilah": "Uji Banding Antar Laboratorium Dosimetri atau Uji Banding",
     "entries": [
       {
@@ -12833,6 +13356,15 @@
     ]
   },
   {
+    "istilah": "Uji Keberterimaan (Acceptance Test)",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Uji pada suatu sistem atau fungsi peralatan radioterapi untuk menjamin bahwa spesifikasi alat dalam kontrak telah sesuai, yang dilaksanakan oleh pemasok bersama pihak pengguna dengan metode uji yang telah disetujui bersama dalam kontrak."
+      }
+    ]
+  },
+  {
     "istilah": "Uji Kesesuaian Pesawat Sinar-X",
     "entries": [
       {
@@ -12855,6 +13387,15 @@
       {
         "sumber": "Perba 9 Tahun 2011 - Uji Kesesuaian Pesawat Sinar-X Radiologi Diagnostik dan Intervensional.pdf",
         "definisi": "Uji Kesesuaian Pesawat Sinar-X adalah uji untuk memastikan Pesawat SinarX dalam kondisi andal, baik untuk kegiatan Radiologi Diagnostik maupun Intervensional dan memenuhi peraturan perundang-undangan."
+      }
+    ]
+  },
+  {
+    "istilah": "Uji Komisioning (Commissioning Test)",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Pengujian untuk memastikan bahwa semua parameter yang diperlukan dalam penggunaan aplikasi klinis sesuai dengan sasaran pengobatan radioterapi dengan menggunakan alat ukur yang terkalibrasi dan dilakukan oleh fisikawan medis atau tenaga ahli setelah uji keberterimaan (acceptance test)."
       }
     ]
   },
@@ -13027,6 +13568,19 @@
       {
         "sumber": "Perba 2 Tahun 2005 - Sistem Pertanggungjawaban dan Pengendalian Bahan Nuklir.pdf",
         "definisi": "Setiap kegiatan yang diselenggarakan untuk memverifikasi catatan pengurus inventori bahan nuklir tentang jumlah bahan nuklir dalam masing-masing batch yang terukur maupun berdasarkan perkiraan yang ada pada saat tertentu di dalam mba."
+      },
+      {
+        "sumber": "Perba 4 Tahun 2011 - Sistem Seifgard.pdf",
+        "definisi": "Setiap kegiatan yang diselenggarakan untuk memverifikasi rekaman inventori bahan nuklir pada saat tertentu di dalam mba."
+      }
+    ]
+  },
+  {
+    "istilah": "Volume Target Pada Perencanaan (Planning Target Volume) Selanjutnya Disebut Volume Target",
+    "entries": [
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Konsep geometrikal yang digunakan dalam radioterapi untuk merencanakan pengobatan dengan mempertimbangkan efek pergerakan pasien dan jaringan yang akan diradiasi."
       }
     ]
   },
@@ -13179,6 +13733,10 @@
       {
         "sumber": "Perba 5 Tahun 2009 - Keselamatan Radiasi dalam Penggunaan Zat Radioaktif untuk Well Logging.pdf",
         "definisi": "Zat radioaktif yang dimasukkan ke dalam kapsul terikat kuat sehingga dapat mencegah kebocoran dan kontaminasi."
+      },
+      {
+        "sumber": "Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf",
+        "definisi": "Zat radioaktif berbentuk padat yang terbungkus secara permanen dalam kapsul yang terikat kuat."
       }
     ]
   },
