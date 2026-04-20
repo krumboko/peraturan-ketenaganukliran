@@ -231,7 +231,7 @@ footer a{color:rgba(255,255,255,.6);text-decoration:none}
   <a href="https://github.com/krumboko/peraturan-ketenaganukliran" target="_blank">github.com/krumboko/peraturan-ketenaganukliran</a> · BAPETEN © 2024
 </footer>
 
-<script src="data.js"></script>
+<script src="data.js?v=2026-04-21"></script>
 <script>
 const BASE = 'dokumen/';
 const STRIPE = {uu:'stripe-uu',pp:'stripe-pp',perpres:'stripe-perpres',perka:'stripe-perka',kepka:'stripe-kepka',se:'stripe-se',panduan:'stripe-panduan'};
@@ -414,7 +414,7 @@ let activeAlpha = 'all';
 let KAMUS_INDEX = {};
 async function loadKamus() {
   try {
-    const res = await fetch('kamus_istilah.json?v=2');
+    const res = await fetch('kamus_istilah.json?v=3');
     KAMUS = await res.json();
     buildKamusIndex(KAMUS);
     buildAlphaNav();
