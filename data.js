@@ -30,10 +30,10 @@ const SECTIONS = [
 { f:'PP Nomor 28 Tahun 2025 - Penyelenggaraan Perizinan Berusaha Berbasis Risiko.pdf',
       t:'PP Nomor 28 Tahun 2025 - Penyelenggaraan Perizinan Berusaha Berbasis Risiko.pdf',
       lamp:[{l:'Lamp I.Perizinan Berusaha Sektor Ketenaganukliran KBLI', f:'PP Nomor 28 Tahun 2025 - (Lamp I. KBLI Ketenaganukliran).pdf'},
-{l:'Lamp II.Perizinan Berusaha Sektor Ketenaganukliran PB_UMKU', f:'PP Nomor 28 Tahun 2025 - (Lamp II. PB - UMKU).pdf'},
+{l:'Lamp II.Perizinan Berusaha Sektor Ketenaganukliran PB_UMKU', f:'PP Nomor 28 Tahun 2025 - (Lamp II. PB-UMKU).pdf'},
 {l:'Lamp III.Metode Analisis Risiko', f:'PP Nomor 28 Tahun 2025 - (Lamp III. Metode Analisis Risiko).pdf'},{l:'Lamp IV.Pedoman Penyusunan Perba', f:'PP Nomor 28 Tahun 2025 - (Lamp IV.Pedoman Penyusunan Perba).pdf'}],
       tag:['industri','medik','instalasi'] },    
-{ f:'PP 45 Tahun 2023 - Keselamatan Radiasi Pengion dan Keamanan Zat Radioaktif.pdf',
+{ f:'PP 45 Tahun 2023 - Keselamatan Radiasi Pengion dan Keamanan ZR.pdf',
       t:'PP No. 45 Tahun 2023 – Keselamatan Radiasi Pengion dan Keamanan Zat Radioaktif', tag:['industri','medik'] },
     { f:'PP 42 Tahun 2022 - Jenis dan Tarif Atas Jenis Penerimaan Negara Bukan Pajak yang Berlaku pada Badan Pengawas Tenaga Nuklir.pdf',
       t:'PP No. 42 Tahun 2022 – Tarif dan Jenis PNBP yang Berlaku Pada BAPETEN', tag:['industri','medik','instalasi'] },
@@ -57,13 +57,13 @@ const SECTIONS = [
       t:'PP No. 46 Tahun 2009 – Batas Pertanggungjawaban Kerugian Nuklir', tag:['instalasi'] },
     { f:'PP 27 Tahun 2009 - Jenis dan Tarif Atas Jenis Penerimaan Negara Bukan Pajak yang Berlaku pada Badan Pengawas Tenaga Nuklir.pdf',
       t:'PP No. 27 Tahun 2009 – Jenis dan Tarif PNBP yang Berlaku Pada BAPETEN', tag:['industri','medik','instalasi'] },
-    { f:'PP 29 Tahun 2008 - Perizinan Pemanfaatan Sumber Radiasi Pengion dan Bahan Nuklir.pdf',
+    { f:'PP 29 Tahun 2008 - Perizinan Pemanfaatan SRP dan BN.pdf',
       t:'PP No. 29 Tahun 2008 – Perizinan Pemanfaatan Sumber Radiasi Pengion dan Bahan Nuklir', tag:['industri','medik'] },
     { f:'PP 33 Tahun 2007 - Keselamatan Radiasi Pengion dan Keamanan Zat Radioaktif.pdf',
       t:'PP No. 33 Tahun 2007 – Keselamatan Radiasi Pengion dan Keamanan Sumber Radioaktif', tag:['industri','medik'] },
-    { f:'PP 43 Tahun 2006 - Perizinan Reaktor Nuklir.pdf',
+    { f:'PP 43 Tahun 2006 - Perizinan Reaktot Nuklir.pdf',
       t:'PP No. 43 Tahun 2006 – Perizinan Reaktor Nuklir', tag:['instalasi'] },
-    { f:'PP 26 Tahun 2002 - Keselamatan Pengangkutan Zat Radioaktif.pdf',
+    { f:'PP 26 Tahun 2002 - Keselamatan Pengangkutan ZR.pdf',
       t:'PP No. 26 Tahun 2002 – Keselamatan Pengangkutan Zat Radioaktif', tag:['industri','medik'] },
     { f:'PP 27 Tahun 2002 - Pengelolaan Limbah Radioaktif.pdf',
       t:'PP No. 27 Tahun 2002 – Pengelolaan Limbah Radioaktif', tag:['industri','medik','instalasi'] },
@@ -110,7 +110,7 @@ const SECTIONS = [
       t:'Perba 01 Tahun 2025 Penilaian Kesesuaian Pesawat Sinar X Radiologi Diagnostik dan Intervensional', tag:['industri','medik'] },
     { f:'Perba 2 Tahun 2025 - Keselamatan Radiasi Pengion dalam Penggunaan Sumber Radiasi Pengion untuk Peralatan Pengukuran (Gauging).pdf',
       t:'Perba 02 Tahun 2025 Keselamatan Radiasi Pengion dalam Penggunaan Sumber Radiasi Pengion untuk Peralatan Pengukuran (Gauging)', tag:['industri'] },
-{ f:'Perba 5 Tahun 2025 - Standar Kegiatan Usaha danatau Standar Produk Jasa pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran.pdf',
+    { f:'Perba 5 Tahun 2025 - Standar Kegiatan Usaha danatau Standar Produk Jasa pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran.pdf',
       t:'Perba 5 Tahun 2025 - Standar Kegiatan Usaha dan/atau Standar Produk Jasa pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran', tag:['industri','medik','instalasi'] },
  
   ]},
@@ -123,8 +123,13 @@ const SECTIONS = [
     { f:'Perba 4 Tahun 2024 - Izin Bekerja Petugas pada Fasilitas Radiasi dan atau Kegiatan Pemanfaatan Sumber Radiasi Pengion.pdf',
       t:'Perba BAPETEN No. 4 Tahun 2024 – Izin Pekerja Petugas pada Fasilitas Radiasi', tag:['industri','medik'] },
   ]},
+  { id:'s4d', title:'Peraturan BAPETEN 2023', cat:'perka', items:[
+    { f:'Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf',
+      t:'Perba BAPETEN No. 6 Tahun 2023 – Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir', tag:['industri','medik'] },
+    
+  ]},
 
-  { id:'s4d', title:'Peraturan BAPETEN 2022', cat:'perka', items:[
+  { id:'s4e', title:'Peraturan BAPETEN 2022', cat:'perka', items:[
     { f:'Perba 1 Tahun 2022 - Penatalaksanaan Perizinan Berusaha.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2022 – Penatalaksanaan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran', tag:['industri','medik','instalasi'] },
     { f:'Perba 2 Tahun 2022 - Perubahan Perba 2 Tahun 2028 - Uji Kesesuaian Pesawat Radiologi Diagnostik.pdf',
@@ -137,12 +142,12 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 5 Tahun 2022 – Manajemen Penuaan Reaktor Nuklir', tag:['instalasi'] },
   ]},
 
-  { id:'s4e', title:'Peraturan BAPETEN 2021', cat:'perka', items:[
+  { id:'s4f', title:'Peraturan BAPETEN 2021', cat:'perka', items:[
     { f:'Perba 3 Tahun 2021 - Standar Kegiatan Usaha dan Standar Produk Perizinan Berusaha Sektor Ketenaganukliran.pdf',
       t:'Perba BAPETEN No. 3 Tahun 2021 – Standar Kegiatan Usaha dan Standar Produk Pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko', tag:['industri','medik','instalasi'] },
   ]},
 
-  { id:'s4f', title:'Peraturan BAPETEN 2020', cat:'perka', items:[
+  { id:'s4g', title:'Peraturan BAPETEN 2020', cat:'perka', items:[
     { f:'Perba 1 Tahun 2020 - Aspek Proteksi Radiasi dalam Desain Reaktor Daya.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2020 – Aspek Proteksi Radiasi dalam Desain Reaktor Daya', tag:['instalasi'] },
     { f:'Perba 3 Tahun 2020 - Keselamatan Radiasi Dalam Penggunaan Iradiator untuk Iradiasi.pdf',
@@ -161,7 +166,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 12 Tahun 2020 – Klasifikasi Struktur, Sistem, dan Komponen Instalasi Nuklir', tag:['instalasi'] },
   ]},
 
-  { id:'s4g', title:'Peraturan BAPETEN 2019', cat:'perka', items:[
+  { id:'s4h', title:'Peraturan BAPETEN 2019', cat:'perka', items:[
     { f:'Perba 2 Tahun 2019 - Keselamatan Komisioning Reaktor Non Daya.pdf',
       t:'Perba BAPETEN No. 2 Tahun 2019 – Keselamatan Komisioning Reaktor Nondaya',
       lamp:[{l:'Lamp I', f:'Perba 2 Tahun 2019 - Keselamatan Komisioning Reaktor Non Daya (Lampiran I).pdf'}],
@@ -178,7 +183,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 8 Tahun 2019 – Keselamatan Operasi Reaktor Nondaya', tag:['instalasi'] },
   ]},
 
-  { id:'s4h', title:'Peraturan BAPETEN 2018', cat:'perka', items:[
+  { id:'s4i', title:'Peraturan BAPETEN 2018', cat:'perka', items:[
     { f:'Perba 2 Tahun 2018 - Uji Kesesuaian Pesawat Sinar X Radiologi Diagnostik dan Interventional.pdf',
       t:'Perba BAPETEN No. 2 Tahun 2018 – Uji Kesesuaian Pesawat Sinar-X Radiologi Diagnostik dan Intervensional', tag:['medik'] },
     { f:'Perba 4 Tahun 2018 - Ketentuan Keselamatan Evaluasi Tapak Instalasi Nuklir.pdf',
@@ -189,21 +194,21 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 6 Tahun 2018 – Persyaratan Tata Cara Perizinan Berusaha Terintegrasi Secara Elektronik Sektor Ketenaganukliran', tag:['industri','medik','instalasi'] },
   ]},
 
-  { id:'s4i', title:'Peraturan BAPETEN 2017', cat:'perka', items:[
+  { id:'s4j', title:'Peraturan BAPETEN 2017', cat:'perka', items:[
     { f:'Perba 2 Tahun 2017 - Larangan dan Batasan Impor Ekspor Barang Konsumen, Sumber Radiasi Pengion dan Bahan Nuklir.pdf',
       t:'Perba BAPETEN No. 2 Tahun 2017 – Larangan dan Pembatasan Impor dan Ekspor Barang Konsumen, SRP, dan Bahan Nuklir', tag:['industri'] },
     { f:'Perba 7 Tahun 2017 - Perubahan Perba 7 Tahun 2013 - Nilai Batas Radioaktivitas Lingkungan.pdf',
       t:'Perba BAPETEN No. 7 Tahun 2017 – Perubahan Atas Perba No. 7 Tahun 2013 Tentang Nilai Batas Radioaktivitas Lingkungan', tag:['industri','medik','instalasi'] },
   ]},
 
-  { id:'s4j', title:'Peraturan BAPETEN 2016', cat:'perka', items:[
+  { id:'s4k', title:'Peraturan BAPETEN 2016', cat:'perka', items:[
     { f:'Perba 5 Tahun 2016 - Keselamatan Radiasi Produksi Barang Konsumen.pdf',
       t:'Perba BAPETEN No. 5 Tahun 2016 – Keselamatan Radiasi Dalam Produksi Barang Konsumen', tag:['industri'] },
     { f:'Perba 8 Tahun 2016 - Pengolahan Limbah Radioaktif Tingkat Rendah dan Sedang.pdf',
       t:'Perba BAPETEN No. 8 Tahun 2016 – Pengelolaan Limbah Radioaktif Tingkat Rendah dan Tingkat Sedang', tag:['industri','medik','instalasi'] },
   ]},
 
-  { id:'s4k', title:'Peraturan BAPETEN 2015', cat:'perka', items:[
+  { id:'s4l', title:'Peraturan BAPETEN 2015', cat:'perka', items:[
     { f:'Perba 1 Tahun 2015 - Penatalaksanaan Tanggap Darurat Bapeten.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2015 – Penatalaksanaan Tanggap Darurat Badan Pengawas Tenaga Nuklir', tag:['industri','medik','instalasi'] },
     { f:'Perba 2 Tahun 2015 - Verifikasi dan Penilaian Keselamatan Reaktor Daya.pdf',
@@ -222,7 +227,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 11 Tahun 2015 – Laboratorium Dosimetri Eksternal', tag:['industri','medik'] },
   ]},
 
-  { id:'s4l', title:'Peraturan BAPETEN 2014', cat:'perka', items:[
+  { id:'s4m', title:'Peraturan BAPETEN 2014', cat:'perka', items:[
     { f:'Perba 2 Tahun 2014 - Manajemen Teras Serta Penanganan Bahan Bakar Nuklir Reaktor Non Daya.pdf',
       t:'Perba BAPETEN No. 2 Tahun 2014 – Manajemen Teras serta Penanganan dan Penyimpanan Bahan Bakar Nuklir Pada Reaktor Nondaya', tag:['instalasi'] },
     { f:'Perba 3 Tahun 2014 - Penyusunan Dokumen AMDAL Bidang Ketenaganukliran.pdf',
@@ -243,7 +248,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 16 Tahun 2014 – Surat Izin Bekerja Petugas Tertentu Di Instalasi Yang Memanfaatkan SRP', tag:['industri','medik'] },
   ]},
 
-  { id:'s4m', title:'Peraturan BAPETEN 2013', cat:'perka', items:[
+  { id:'s4n', title:'Peraturan BAPETEN 2013', cat:'perka', items:[
     { f:'Perba 1 Tahun 2013 - Perubahan Perba 3 Tahun 2012 - Penatausahaan PNBP.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2013 – Perubahan Atas Perba No. 3 Tahun 2012 Tentang Penatausahaan PNBP', tag:['industri','medik','instalasi'] },
     { f:'Perba 3 Tahun 2013 - Keselamatan Radiasi dalam Penggunaan Radioterapi.pdf',
@@ -276,7 +281,7 @@ const SECTIONS = [
 	tag:['industri'] },
   ]},
 
-  { id:'s4n', title:'Peraturan BAPETEN 2012', cat:'perka', items:[
+  { id:'s4o', title:'Peraturan BAPETEN 2012', cat:'perka', items:[
     { f:'Perba 1 Tahun 2012 - Ketentuan Desain Sistem Proteksi Kebakanan dan Ledakan Internal Reaktor Daya.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2012 – Ketentuan Desain Sistem Proteksi Terhadap Kebakaran dan Ledakan Internal Pada Reaktor Daya', tag:['instalasi'] },
     { f:'Perba 2 Tahun 2012 - Desain Proteksi Bahaya Internal Reaktor Daya.pdf',
@@ -307,7 +312,7 @@ const SECTIONS = [
       tag:['medik'] },
   ]},
 
-  { id:'s4o', title:'Peraturan BAPETEN 2011', cat:'perka', items:[
+  { id:'s4p', title:'Peraturan BAPETEN 2011', cat:'perka', items:[
     { f:'Perba 1 Tahun 2011 - Ketentuan Keselamatan Desain Reaktor Non Daya.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2011 – Ketentuan Keselamatan Desain Reaktor Nondaya',
       lamp:[{l:'Lamp I', f:'Perba 1 Tahun 2011 - Ketentuan Keselamatan Reaktor Non Daya (Lamp I).pdf'}],
@@ -334,7 +339,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 10 Tahun 2011 – Sistem Manajemen Badan Pengawas Tenaga Nuklir', tag:['industri','medik','instalasi'] },
   ]},
 
-  { id:'s4p', title:'Peraturan BAPETEN 2010', cat:'perka', items:[
+  { id:'s4q', title:'Peraturan BAPETEN 2010', cat:'perka', items:[
     { f:'Perba 1 Tahun 2010 - Kesiapsiagaan dan Penanggulangan Kedaruratan Nuklir.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2010 – Kesiapsiagaan dan Penanggulangan Kedaruratan Nuklir', tag:['industri','medik','instalasi'] },
 
@@ -346,7 +351,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 6 Tahun 2010 – Pemantauan Kesehatan untuk Pekerja Radiasi', tag:['industri','medik','instalasi'] },
   ]},
 
-  { id:'s4q', title:'Peraturan BAPETEN 2009', cat:'perka', items:[
+  { id:'s4r', title:'Peraturan BAPETEN 2009', cat:'perka', items:[
     { f:'Perba 1 Tahun 2009 - Ketentuan Sistem Proteksi Fisik Instalasi dan Bahan Nuklir.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2009 – Ketentuan Sistem Proteksi Fisik Instalasi dan Bahan Nuklir', tag:['instalasi'] },
     { f:'Perba 2 Tahun 2009 - Penyusunan Daftar Informasi Desain.pdf',
@@ -363,7 +368,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 9 Tahun 2009 – Intervensi Terhadap Paparan Yang Berasal Dari TENORM', tag:['industri'] },
   ]},
 
-  { id:'s4r', title:'Peraturan BAPETEN 2008', cat:'perka', items:[
+  { id:'s4s', title:'Peraturan BAPETEN 2008', cat:'perka', items:[
     { f:'Perba 1 Tahun 2008 - Evaluasi Tapak Reaktor Daya (Aspek Kegempaan).pdf',
       t:'Perba BAPETEN No. 1 Tahun 2008 – Evaluasi Tapak Reaktor Daya untuk Aspek Kegempaan', tag:['instalasi'] },
     { f:'Perba 2 Tahun 2008 - Evaluasi Tapak Reaktor Daya Aspek Kegunungapian.pdf',
@@ -388,7 +393,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 15 Tahun 2008 – Persyaratan untuk Memperoleh Surat Izin Bekerja Petugas Tertentu', tag:['industri','medik'] },
   ]},
 
-  { id:'s4s', title:'Peraturan BAPETEN 2007', cat:'perka', items:[
+  { id:'s4t', title:'Peraturan BAPETEN 2007', cat:'perka', items:[
     { f:'Perba 5 Tahun 2007 - Ketentuan Keselamatan Evaluasi Tapak Reaktor Nuklir.pdf',
       t:'Perba BAPETEN No. 5 Tahun 2007 – Ketentuan Keselamatan Evaluasi Tapak Reaktor Nuklir', tag:['instalasi'] },
     { f:'Perba 7 Tahun 2007 - Keamanan Sumber Radioaktif.pdf',
@@ -399,7 +404,7 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 14 Tahun 2007 – Satuan Tanggap Darurat', tag:['industri','medik','instalasi'] },
   ]},
 
-  { id:'s4t', title:'Peraturan BAPETEN 2006', cat:'perka', items:[
+  { id:'s4u', title:'Peraturan BAPETEN 2006', cat:'perka', items:[
     { f:'Perba 1 Tahun 2006 - Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi, dan Keluaran Sumber Terapi.pdf',
       t:'Perba BAPETEN No. 1 Tahun 2006 – Laboratorium Dosimetri, Kalibrasi Alat Ukur Radiasi dan Keluaran Sumber Radiasi Terapi', tag:['medik','industri'] },
     { f:'Perba 3 Tahun 2006 - Perizinan Instalasi Nuklir Non Reaktor.pdf',
@@ -410,12 +415,12 @@ const SECTIONS = [
       t:'Perba BAPETEN No. 10 Tahun 2006 – Pedoman Penyusunan Laporan Analisis Keselamatan Instalasi Nuklir Nonreaktor', tag:['instalasi'] },
   ]},
 
-  { id:'s4u', title:'Peraturan BAPETEN 2005', cat:'perka', items:[
+  { id:'s4v', title:'Peraturan BAPETEN 2005', cat:'perka', items:[
     { f:'Perba 2 Tahun 2005 - Sistem Pertanggungjawaban dan Pengendalian Bahan Nuklir.pdf',
       t:'Perba BAPETEN No. 2 Tahun 2005 – Sistem Pertanggungjawaban dan Pengendalian Bahan Nuklir', tag:['instalasi'] },
   ]},
 
-  { id:'s4v', title:'Peraturan BAPETEN 1999', cat:'perka', items:[
+  { id:'s4w', title:'Peraturan BAPETEN 1999', cat:'perka', items:[
     { f:'Perba 06 1999 Pembangunaan dan Pengoperasian RN.pdf',
       t:'Perba BAPETEN No. 6 Tahun 1999 – Pembangunan dan Pengoperasian Reaktor Nuklir', tag:['instalasi'] },
   ]},
