@@ -2,12 +2,6 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8"/>
-<!-- favicon -->
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="nuc-law-512.png">
- 
-<!-- tag lainnya yang sudah ada... -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Peraturan Ketenaganukliran – BAPETEN</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -154,7 +148,7 @@ footer a{color:rgba(255,255,255,.6);text-decoration:none}
     </svg>
     <div class="header-text">
       <h1>Peraturan <em>Ketenaganukliran</em></h1>
-      <p>Peraturan yang dikeluarkan oleh Badan Pengawas Tenaga Nuklir (Bapeten) dan peraturan terkait lain·</p>
+      <p>Badan Pengawas Tenaga Nuklir · BAPETEN · Versi 3.0</p>
     </div>
     <div class="header-stats">
       <div class="page-btn-wrap">
@@ -420,7 +414,7 @@ let activeAlpha = 'all';
 let KAMUS_INDEX = {};
 async function loadKamus() {
   try {
-    const res = await fetch('kamus_istilah.json');
+    const res = await fetch('kamus_istilah.json?v=2');
     KAMUS = await res.json();
     buildKamusIndex(KAMUS);
     buildAlphaNav();
@@ -438,7 +432,8 @@ function buildKamusIndex(kamus) {
 }
 function buildAlphaNav() {
   const huruf = ['all', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
-  const tersedia = new Set(KAMUS.map(k => k.istilah[0].toUpperCase()));
+  <!--const tersedia = new Set(KAMUS.map(k => k.istilah[0].toUpperCase()));-->
+  const tersedia = new Set(KAMUS.map(k => k.istilah.trim().charAt(0).toUpperCase()));
   const wrap = document.getElementById('alphNav');
   wrap.innerHTML = huruf.map(h => {
     const disabled = h !== 'all' && !tersedia.has(h) ? ' disabled' : '';
@@ -455,11 +450,20 @@ function setAlpha(h) {
 
 
 function renderKamus() {
+  console.log("TOTAL DATA:", KAMUS.length);
+  KAMUS.forEach(d => {
+    const first = d.istilah.trim()[0];
+    if (!/[A-Za-z]/.test(first)) {
+      console.log("TIDAK MASUK FILTER:", d.istilah);
+    }
+  });
   const q = (document.getElementById('kamusQ')?.value || '').toLowerCase().trim();
+  
   let list = KAMUS;
 
   if (activeAlpha !== 'all') {
-    list = list.filter(k => k.istilah[0].toUpperCase() === activeAlpha);
+    <!--list = list.filter(k => k.istilah[0].toUpperCase() === activeAlpha);-->
+    list = list.filter(k => k.istilah.trim().charAt(0).toUpperCase() === activeAlpha);
   }
 
   if (q) {
