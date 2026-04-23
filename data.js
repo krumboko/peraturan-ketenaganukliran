@@ -107,11 +107,11 @@ const SECTIONS = [
 
   { id:'s4b', title:'Peraturan BAPETEN 2025', cat:'perka', items:[
     { f:'Perba 1 Tahun 2025 - Penilaian Kesesuaian Pesawat Sinar X Radiologi Diagnostik dan Intervensional.pdf',
-      t:'Perba 01 Tahun 2025 Penilaian Kesesuaian Pesawat Sinar X Radiologi Diagnostik dan Intervensional', tag:['industri','medik'] },
+      t:'Perba No. 01 Tahun 2025 Penilaian Kesesuaian Pesawat Sinar X Radiologi Diagnostik dan Intervensional', tag:['industri','medik'] },
     { f:'Perba 2 Tahun 2025 - Keselamatan Radiasi Pengion dalam Penggunaan Sumber Radiasi Pengion untuk Peralatan Pengukuran (Gauging).pdf',
-      t:'Perba 02 Tahun 2025 Keselamatan Radiasi Pengion dalam Penggunaan Sumber Radiasi Pengion untuk Peralatan Pengukuran (Gauging)', tag:['industri'] },
+      t:'Perba No. 02 Tahun 2025 Keselamatan Radiasi Pengion dalam Penggunaan Sumber Radiasi Pengion untuk Peralatan Pengukuran (Gauging)', tag:['industri'] },
     { f:'Perba 5 Tahun 2025 - Standar Kegiatan Usaha danatau Standar Produk Jasa pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran.pdf',
-      t:'Perba 5 Tahun 2025 - Standar Kegiatan Usaha dan/atau Standar Produk Jasa pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran', tag:['industri','medik','instalasi'] },
+      t:'Perba No.5 Tahun 2025 - Standar Kegiatan Usaha dan/atau Standar Produk Jasa pada Penyelenggaraan Perizinan Berusaha Berbasis Risiko Sektor Ketenaganukliran', tag:['industri','medik','instalasi'] },
  
   ]},
 
@@ -121,7 +121,7 @@ const SECTIONS = [
     { f:'Perba 3 Tahun 2024 - Pembatasan Impor dan Ekspor Barang Konsumen, Sumber Radiasi Pengion, dan Bahan Nuklir.pdf',
       t:'Perba BAPETEN No. 3 Tahun 2024 – Pembatasan Impor dan Ekspor Barang Konsumen ZR dan PRP', tag:['industri'] },
     { f:'Perba 4 Tahun 2024 - Izin Bekerja Petugas pada Fasilitas Radiasi dan atau Kegiatan Pemanfaatan Sumber Radiasi Pengion.pdf',
-      t:'Perba BAPETEN No. 4 Tahun 2024 – Izin Pekerja Petugas pada Fasilitas Radiasi', tag:['industri','medik'] },
+      t:'Perba BAPETEN No. 4 Tahun 2024 – Izin Bekerja Petugas pada Fasilitas Radiasi', tag:['industri','medik'] },
   ]},
   { id:'s4d', title:'Peraturan BAPETEN 2023', cat:'perka', items:[
     { f:'Perba 6 Tahun 2023 - Sistem Manajemen Fasilitas dan Kegiatan Pemanfaatan Tenaga Nuklir.pdf',
